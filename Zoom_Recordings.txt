@@ -10,3 +10,7 @@ Passcode: 2$pnZGM+
 Day 2 Variables and Data Types
 https://techelevator.zoom.us/rec/share/6oKu1FO9xOX6Bevrr_8L5nLNe9K6crwTvmT23M5NPWGrZB0sLRh8RBk6Pvvj6j1l.axFfOvCy38LeSbNk
 Passcode: +0pY?Yn1
+
+Day 3 Logical branching
+https://techelevator.zoom.us/rec/share/VTQ-YblIRgx7XglonDIRnLal-lSMarktMJtSqq0HEO723vNCHVrUe8Ian8G6OpT5.W57yw0nsGK6kb6Qj
+Passcode: GG8FvzQ&
