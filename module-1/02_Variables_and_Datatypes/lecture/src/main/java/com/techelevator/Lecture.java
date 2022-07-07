@@ -8,87 +8,115 @@ public class Lecture {
 		1. Create a variable to hold an int and call it numberOfExercises.
 			Then set it to 26.
 		*/
-
-		//System.out.println(numberOfExercises);
+		int numberOfExercises = 26;
+		System.out.println(numberOfExercises);
 
 		/*
 		2. Create a variable to hold a double and call it half.
 			Set it to 0.5.
 		*/
-
-		//System.out.println(half);
+		double half = 0.5;
+		System.out.println(half);
 
 		/*
 		3. Create a variable to hold a String and call it name.
 			Set it to "TechElevator".
 		*/
-
-		//System.out.println(name);
+		String name = "TechElevator";
+		System.out.println(name);
 
 		/*
 		4. Create a variable called seasonsOfFirefly and set it to 1.
 		*/
-
-		//System.out.println(seasonsOfFirefly);
+		int seasonsOfFirefly = 1;
+		System.out.println(seasonsOfFirefly);
 
 		/*
 		5. Create a variable called myFavoriteLanguage and set it to "Java".
 		*/
-
-		//System.out.println(myFavoriteLanguage);
+		String myFavoriteLanguage = "Java";
+		System.out.println(myFavoriteLanguage);
 
 		/*
 		6. Create a variable called pi and set it to 3.1416.
 		*/
-
-		//System.out.println(pi);
+		double pi = 3.1416;
+		System.out.println(pi);
 
 		/*
 		7. Create and set a variable that holds your name.
 		*/
+		String name2 = "Ken";
+		System.out.println(name2);
 
 		/*
 		8. Create and set a variable that holds the number of buttons on your mouse.
 		*/
+		int numberOfButtons = 3;
+		System.out.println(numberOfButtons);
 
 		/*
 		9. Create and set a variable that holds the percentage of battery left on
 		your phone.
 		*/
+		double battery = 0.85;
+		System.out.println(battery);
 
 		/*
 		10. Create an int variable that holds the difference between 121 and 27.
 		*/
+		int difference = 121-27;
+		System.out.println(difference);
 
 		/*
 		11. Create a double that holds the addition of 12.3 and 32.1.
 		*/
+		double addition = 12.3+32.1;
+		System.out.println(addition);
 
 		/*
 		12. Create a String that holds your full name.
 		*/
+		String fullName = "Ken Peterson";
+		System.out.println(fullName);
 
 		/*
 		13. Create a String that holds the word "Hello, " concatenated onto your
 		name from above.
 		*/
+		String nameTest = "Hello " + fullName;
+		System.out.println(nameTest);
 
 		/*
 		14. Add a " Esquire" onto the end of your full name and save it back to
 		the same variable.
 		*/
+		String esquire = fullName + " Esquire";
+		System.out.println(esquire);
 
 		/*
 		15. Now do the same as exercise 14, but use the += operator.
 		*/
+		fullName += " Esquire";
+		System.out.println(fullName);
+
 
 		/*
 		16. Create a variable to hold "Saw" and add a 2 onto the end of it.
 		*/
+		String saw = "Saw" + 2;
+		/*double pi2 = 3.14;
+		System.out.println(pi2);
+		int x = (int) pi2;
+		System.out.println(x);
+		saw += x; */
+		System.out.println(saw);
 
 		/*
 		17. Add a 0 onto the end of the variable from exercise 16.
 		*/
+		saw += 0;
+		System.out.println(saw);
 
 		/*
 		18. What is 4.4 divided by 2.2?
@@ -114,9 +142,14 @@ public class Lecture {
 		23. If I divide 5 by 2, what's my remainder?
 		*/
 
+		int remainder = 5 % 2;
+		System.out.println(remainder);
+
 		/*
 		24. What is 1,000,000,000 * 3?
 		*/
+		long bigNumber = 1000000000 * 3L;
+		System.out.println(bigNumber);
 
 		/*
 		25. Create a variable that holds a boolean called isDoneWithExercises and
