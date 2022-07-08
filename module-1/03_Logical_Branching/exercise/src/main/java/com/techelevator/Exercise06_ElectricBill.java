@@ -23,7 +23,18 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(63.7) ➔ 12.74
     calculateElectricBill(110) ➔ 22.5
      */
+    double priceRateDiff = EXCESS_RATE - BASE_RATE;
+
     public double calculateElectricBill(double unitsUsed) {
+
+        double priceDifference = (unitsUsed - EXCESS_UNITS_LIMIT) * priceRateDiff;
+
+
+        if(unitsUsed <= EXCESS_UNITS_LIMIT){
+            return unitsUsed * BASE_RATE;
+        } else if (unitsUsed > EXCESS_UNITS_LIMIT){
+            return unitsUsed * BASE_RATE + priceDifference;
+        }
         return 0;
     }
 
@@ -39,6 +50,22 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(110, true) ➔ 21.375
      */
     public double calculateElectricBill(double unitsUsed, boolean hasRenewableEnergy) {
+
+        double priceDifference = (unitsUsed - EXCESS_UNITS_LIMIT) * priceRateDiff;
+
+        if (hasRenewableEnergy == true) {
+            if (unitsUsed <= EXCESS_UNITS_LIMIT) {
+                return unitsUsed * BASE_RATE * DISCOUNT_FACTOR;
+            } else if (unitsUsed > EXCESS_UNITS_LIMIT) {
+                return ((BASE_RATE * EXCESS_UNITS_LIMIT) + ((unitsUsed - EXCESS_UNITS_LIMIT) * EXCESS_RATE)) * DISCOUNT_FACTOR;
+            }
+
+        } else if (unitsUsed <= EXCESS_UNITS_LIMIT) {
+            return unitsUsed * BASE_RATE;
+        } else if (unitsUsed > EXCESS_UNITS_LIMIT) {
+            return unitsUsed * BASE_RATE + priceDifference;
+            //return (BASE_RATE * EXCESS_UNITS_LIMIT) * ((unitsUsed - EXCESS_UNITS_LIMIT) * EXCESS_RATE);
+        }
         return 0;
     }
 
@@ -63,6 +90,17 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(110, 120) ➔ -2.0
      */
     public double calculateElectricBill(double unitsUsed, double unitsReturned) {
-        return 0;
+        double netUsage = unitsUsed - unitsReturned;
+        double electricBill = 0;
+        if (netUsage < EXCESS_UNITS_LIMIT) {
+            electricBill = 0.2 * netUsage;
+        } else if (netUsage >= EXCESS_UNITS_LIMIT) {
+            electricBill = (0.2 * EXCESS_UNITS_LIMIT) + 0.25 * (netUsage - 100);
+        }
+        if (unitsReturned > 0 && netUsage > 0) {
+            electricBill *= 0.95;
+        }
+        return electricBill;
     }
 }
+

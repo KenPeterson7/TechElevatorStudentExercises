@@ -502,9 +502,6 @@ public class Exercises {
 
 
 
-
-
-
 	    /* Exercise 52
 	    52. Create and assign variables to hold a first name, last name, and middle initial. Using concatenation,
 		build an additional variable to hold the full name in the order of last name, first name, middle initial. The
@@ -525,10 +522,6 @@ public class Exercises {
 		double distance = 800;
 		double travel = 537;
 		int percentageCompleted = (int)(100 * (travel / distance));
-
-
-
-
 
 
 	}

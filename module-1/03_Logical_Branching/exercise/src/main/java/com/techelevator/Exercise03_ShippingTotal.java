@@ -12,6 +12,7 @@ public class Exercise03_ShippingTotal {
     private final double UP_TO_40_LB_RATE = 0.50;
     private final double OVER_40_LB_RATE = 0.75;
 
+
     /*
     Scamper Shipping Company charges $0.50 per pound up to 40 pounds. After that, it's $0.75 for each additional pound.
     Implement the logic needed to calculate the shipping rate when provided a weight in pounds.
@@ -22,7 +23,13 @@ public class Exercise03_ShippingTotal {
     calculateShippingTotal(45) ➔ 23.75
      */
     public double calculateShippingTotal(int weightPounds) {
-        return 0;
+        if(weightPounds < MAX_WEIGHT_POUNDS){
+            return UP_TO_40_LB_RATE * weightPounds;
+        } else /*(weightPounds > MAX_WEIGHT_POUNDS)*/{
+            int overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+            return ((weightPounds - overweightPounds) * UP_TO_40_LB_RATE) + (overweightPounds * OVER_40_LB_RATE);
+        }
+       // return 0;
     }
 
     /*
@@ -37,8 +44,24 @@ public class Exercise03_ShippingTotal {
     calculateShippingTotal(45, false) ➔ 23.75
     calculateShippingTotal(45, true) ➔ 21.375
      */
+
+
     public double calculateShippingTotal(int weightPounds, boolean hasDiscount) {
-        return 0;
+        double hasDiscountRate = 0.9;
+        int overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+        if (weightPounds < MAX_WEIGHT_POUNDS && hasDiscount) {
+            return (UP_TO_40_LB_RATE * weightPounds) * hasDiscountRate;
+        } else if(weightPounds < MAX_WEIGHT_POUNDS) {
+            return UP_TO_40_LB_RATE * weightPounds;
+        } else if (weightPounds >= MAX_WEIGHT_POUNDS && hasDiscount) {
+            overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+            return (((weightPounds - overweightPounds) * UP_TO_40_LB_RATE) + (overweightPounds * OVER_40_LB_RATE)) * hasDiscountRate;
+        } else {
+            overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+            return ((weightPounds - overweightPounds) * UP_TO_40_LB_RATE) + (overweightPounds * OVER_40_LB_RATE);
+        }
+
+     // return 0;
     }
 
     /*
@@ -53,6 +76,19 @@ public class Exercise03_ShippingTotal {
     calculateShippingTotal(45, 0.2) ➔ 19.0
      */
     public double calculateShippingTotal(int weightPounds, double discountPercentage) {
-        return 0;
+
+        double normalPrice;
+        int overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+        double totalPrice;
+        if(weightPounds < MAX_WEIGHT_POUNDS){
+            normalPrice = UP_TO_40_LB_RATE * weightPounds;
+            return normalPrice - (normalPrice * discountPercentage);
+        } else {
+            overweightPounds = weightPounds - MAX_WEIGHT_POUNDS;
+            totalPrice = ((weightPounds - overweightPounds) * UP_TO_40_LB_RATE) + (overweightPounds * OVER_40_LB_RATE);
+            return totalPrice - (totalPrice * discountPercentage);
+        }
+
+        //return 0;
     }
 }
