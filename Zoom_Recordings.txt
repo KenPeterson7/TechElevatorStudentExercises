@@ -14,3 +14,7 @@ Passcode: +0pY?Yn1
 Day 3 Logical branching
 https://techelevator.zoom.us/rec/share/VTQ-YblIRgx7XglonDIRnLal-lSMarktMJtSqq0HEO723vNCHVrUe8Ian8G6OpT5.W57yw0nsGK6kb6Qj
 Passcode: GG8FvzQ&
+
+Day 4 Arrays and Loops
+https://techelevator.zoom.us/rec/share/sx8UmsAgwbTRcRCsB7WMG18QeBe6QsikIj_7DddiTA-wQSSCEpEuQoI5jc1Evffj.uQ30eBCo9P8GiA_X
+Passcode: F$jgn*1u
