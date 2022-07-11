@@ -40,9 +40,9 @@ public class Exercise03_Shirts {
      */
     public char[] buildBulkOrder(int numberOfShirts) {
         char[] order = new char[numberOfShirts];
-        int i=0;
-        while(numberOfShirts>0)
-        {
+
+        for(int i = 0; numberOfShirts>0; i++, numberOfShirts--){
+
             if(i%3==0)
             {
                 order[i] = SMALL_TSHIRT;
@@ -54,12 +54,9 @@ public class Exercise03_Shirts {
             else{
                 order[i] = LARGE_TSHIRT;
             }
-            i++;
-            numberOfShirts--;
         }
         return order;
-
-    }
+        }
 
     /*
      The warehouse is out of small shirts and will only request more when the
