@@ -11,10 +11,14 @@ public class Tutorial {
         for (i = 0; i <= 5; i++) {
             System.out.println(i);
         }
-
-        for (i = 10; i >= 0; i--) {
-            System.out.println(i);
+        int sum = 0;
+        int t;
+        for (t = 0; t < 10; t++) {
+            sum += t;
         }
+        int count = t;
+        System.out.println(count);
+
 
         int[] forecastTemperatures = new int[5];
         forecastTemperatures[0] = 72;
@@ -43,4 +47,12 @@ public class Tutorial {
         System.out.println("The highest temperature is " + highestTemperatureValue);
         System.out.println("The highest temperature is in " + (highestTemperatureIndex + 1) + " days");
     }
+
+
+    int[] numbers = new int[10];
+    for(int ix = 0; ix < numbers.length; ix++) {
+        numbers[ix] = ix * 2;
+    }
+
+    int result = numbers[3];
 }

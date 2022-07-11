@@ -17,7 +17,9 @@ public class Exercise03_Shirts {
     buildOrder() → ['S', 'S', 'S', 'M', 'M', 'L']
      */
     public char[] buildOrder() {
-        return new char[] {};    
+
+        char[] orderSize = new char[] {'S', 'S', 'S', 'M', 'M', 'L'};
+        return orderSize;
     }
 
     /*
@@ -36,24 +38,50 @@ public class Exercise03_Shirts {
     buildBulkOrder(4) → ['S', 'M', 'L', 'S']
     buildBulkOrder(0) → []
      */
-    public char[] buildBulkOrder(int numberOfShirts) { 
-        return new char[] {};    
+    public char[] buildBulkOrder(int numberOfShirts) {
+        char[] order = new char[numberOfShirts];
+        int i=0;
+        while(numberOfShirts>0)
+        {
+            if(i%3==0)
+            {
+                order[i] = SMALL_TSHIRT;
+            }
+            else if(i%3==1)
+            {
+                order[i] = MEDIUM_TSHIRT;
+            }
+            else{
+                order[i] = LARGE_TSHIRT;
+            }
+            i++;
+            numberOfShirts--;
+        }
+        return order;
+
     }
 
     /*
-    The warehouse is out of small shirts and will only request more when the
-    next order comes in that includes an 'S' shirt.
+     The warehouse is out of small shirts and will only request more when the
+     next order comes in that includes an 'S' shirt.
 
-    Implement the logic to look through the next incoming order `char[] order`
-    and return true if we need to place an order for Small shirts.
+     Implement the logic to look through the next incoming order `char[] order`
+     and return true if we need to place an order for Small shirts.
 
-    Examples:
-    placeRequest(['M', 'L', 'S']) → true
-    placeRequest(['M', 'S', 'L']) → true
-    placeRequest(['M', 'M', 'L']) → false
-    placeRequest([]) → false
-     */
+     Examples:
+     placeRequest(['M', 'L', 'S']) → true
+     placeRequest(['M', 'S', 'L']) → true
+     placeRequest(['M', 'M', 'L']) → false
+     placeRequest([]) → false
+      */
+
     public boolean placeRequest(char[] order) {
-        return false; 
+        for(int i=0;i<order.length;i++)
+        {
+            if(order[i] == SMALL_TSHIRT)
+                return true;
+        }
+        return false;
+
     }
 }

@@ -93,12 +93,12 @@ public class Exercise06_ElectricBill {
         double netUsage = unitsUsed - unitsReturned;
         double electricBill = 0;
         if (netUsage < EXCESS_UNITS_LIMIT) {
-            electricBill = 0.2 * netUsage;
+            electricBill = BASE_RATE * netUsage;
         } else if (netUsage >= EXCESS_UNITS_LIMIT) {
-            electricBill = (0.2 * EXCESS_UNITS_LIMIT) + 0.25 * (netUsage - 100);
+            electricBill = (BASE_RATE * EXCESS_UNITS_LIMIT) + EXCESS_RATE * (netUsage - EXCESS_UNITS_LIMIT);
         }
         if (unitsReturned > 0 && netUsage > 0) {
-            electricBill *= 0.95;
+            electricBill *= DISCOUNT_FACTOR;
         }
         return electricBill;
     }
