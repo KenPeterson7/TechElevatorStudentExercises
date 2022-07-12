@@ -37,7 +37,7 @@ public class DecimalToBinary {
 	public static void numberConv(int inputNumber){
 
 		//Created a new integer variable called binaryNumber that is an array that holds 40 indexes
-		//Set it to 40 or larger so it can return very large binary numbers
+		//Set it to 40 or larger, so it can return very large binary numbers
 		int binaryNumber[] = new int[40];
 		//Created integer variable i and set it to the value 0
 		int i = 0;

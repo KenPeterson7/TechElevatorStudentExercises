@@ -27,24 +27,26 @@ public class TempConvert {
 
 		//System outputs the temperature in both Fahrenheit and Celsius based on the temperature & tempDecision variables.
 		//If F is given, system prints the F temp first, then C temp, & vice versa if C is given
-		//System calls on the tempChange method to determine/calculate the conversion based on the temperate & tempDecision that is input
-		//System converts output to uppercase
+		//System calls on the tempChange method to determine/calculate the conversion based on the temperate & tempDecision that the user input
+		//System converts output to uppercase,
+		//System returns C (Celsius) when the inputDecision is F, else return F (meaning the input is not F)
 		System.out.println(temperature + tempDecision + " is " + tempChange(temperature, tempDecision) + (tempDecision.toUpperCase().startsWith("F") ? "C" : "F"));
 	}
 
-	//method for converting given temp to Fahrenheit/Celsius and returns both results
-	public static int tempChange(int temp, String tempDecision) {
+	//method for converting temperature input to Fahrenheit/Celsius (based on the tempDecision) and returns the converted result
+	public static int tempChange(int temperature, String tempDecision) {
 
 		//if statement that occurs when f input is given for the tempDecision variable.
+		//if the temp decision starts w/ an f, then do this...
 		if(tempDecision.toUpperCase().startsWith("F")) {
 			//converts Fahrenheit into Celsius & stores it in variable resultTempC
-			int resultTempC = (int)(( temp - 32) / 1.8);
+			int resultTempC = (int)(( temperature - 32) / 1.8);
 			//returns the converted Celsius temperature to variable resultTempC
 			return resultTempC;
 		} else {
 			//else statement that occurs if any input other than c is given for the tempDecision variable.
 			//converts Celsius into Fahrenheit & stores it in variable resultTempF
-			int resultTempF = ((int)(temp * 1.8 + 32));
+			int resultTempF = ((int)(temperature * 1.8 + 32));
 			//returns the converted Fahrenheit temperature to variable resultTempF
 			return resultTempF;
 		}
