@@ -22,3 +22,7 @@ Passcode: F$jgn*1u
 Day 5 Command Line Program
 https://techelevator.zoom.us/rec/share/RKKQG2atlfGCr-rn--_lRYZXv-mYD5I-u-QwOnnPVSOeDPJtn62rxQWB73Pw48lL.6wniiUePYmZeegPS
 Passcode: 01^MzM?y
+
+Day 6 Intro to Objects
+https://techelevator.zoom.us/rec/share/G59SXAT4aq7ZMpOx7TVdIeTgMOUEIGbCBwC4e0osIvxZr00gP7iDd7gLjpHExgiQ.xBkXD6tDaCbmlSy8
+Passcode: l63Q$mL8
