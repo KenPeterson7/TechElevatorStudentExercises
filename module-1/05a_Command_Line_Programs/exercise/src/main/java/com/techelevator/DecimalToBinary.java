@@ -7,27 +7,25 @@ public class DecimalToBinary {
 	//method is public (can be accessed outside the class, static means the method belongs to the class, return type is void (nothing to return)
 	//variables is a String array
 	public static void main(String[] args) {
-
-		//Created new scanner variable named input
+		//Created new scanner variable named input to take in user input
 		Scanner input = new Scanner(System.in);
-		//Told the system to output a question to the user asking them to input a series of decimal values separated by spaces
-		System.out.print("Please enter in a series of decimal values (separated by spaces): ");
-
+		//Told the system to output a question to the user asking them to input a series of decimal values (whole numbers) separated by spaces
+		System.out.print("Please enter in a series of decimal values (whole numbers) (separated by spaces): ");
 		//Created a String variable called enteredValue that stores the value of the next input as a String
 		String enteredValue = input.nextLine();
-		//Created a String (array) variable called enteredValueSplit that splits the value of the enteredValue String variable into an array
+		//This will split the values entered for the enterValue variable for each space
+		//and stores the values in a String array variable called enteredValueSplit
 		String[] enteredValueSplit = enteredValue.split(" ");
 
-		//Created a for loop that is initialized at 0, condition is set to run to the end of the array, and it iterates once each loop
+		//Created a for loop that is initialized at 0, condition is set to run for the length of the enteredValueSplit array, and it iterates once each loop
 		for(int i = 0;  i < enteredValueSplit.length ; i++) {
 			//Created an int variable called inputNumber that stores the value(s) of the String array enteredValueSplit as an Integer
-			//Variable stores the value by parsing the String variable as an Integer
+			//Variable stores the value for each loop by parsing the String variable as an Integer
 			int inputNumber = Integer.parseInt(enteredValueSplit[i]);
-			//Told the system to output a statement, adding the inputNumber variable and adding related text
+			//Told the system to output a statement, including the inputNumber variable and adding related text
 			System.out.print(inputNumber + " in binary is ");
-
-			//Calls the NumberConv method and passes the inputNumber variable as a parameter
-			//Prints out the appropriate binary number based on the below for loop
+			//Calls the numberConv method and passes the inputNumber variable as a parameter
+			//Prints out the appropriate binary number based on the below FOR loop
 			numberConv(inputNumber);
 			//Tells the system to print a blank statement (for example, if a negative integer is input)
 			System.out.println(" ");
@@ -35,7 +33,6 @@ public class DecimalToBinary {
 	}
 	//method for converting integer value to binary and return the result
 	public static void numberConv(int inputNumber){
-
 		//Created a new integer variable called binaryNumber that is an array that holds 40 indexes
 		//Set it to 40 or larger, so it can return very large binary numbers
 		int binaryNumber[] = new int[40];
@@ -55,9 +52,7 @@ public class DecimalToBinary {
 		for(int t = i-1;t >= 0;t--){
 			//Prints out the binaryNumber based on the index
 			System.out.print(binaryNumber[t]);
-
 		}
 	}
-
 }
 
