@@ -47,6 +47,8 @@ public class Exercises {
 	 makeOutWord("[[]]", "word") → "[[word]]"
 	 */
 	public String makeOutWord(String out, String word) {
+		//substring starts at index 0 and stops when it reaches index 2,
+		//substring starts at index 2 and stops when it reaches index 4
 		String newOut = (out.substring(0, 2) + word + out.substring(2, 4));
 		return newOut;
 	}
@@ -248,15 +250,12 @@ public class Exercises {
 	 twoChar("java", 3) → "ja"
 	 */
 	public String twoChar(String str, int index) {
-
-		//if the index is greater than or equal to 0 & the current index + 2 is less than or equal to the length of the String
-		//return the index + index + 2
-		if (index >= 0 && (index + 2 <= str.length())){
+		//if the index is greater than or 0 & the current index + 2 is less than or equal to the length of the String
+		//return a substring at the start of the index and stop at the index + 2 spot
+		if (index > 0 && index + 2 <= str.length()){
 			return str.substring(index, index + 2);
-
 		} else {
 			return str.substring(0, 2);
-
 		}
 	}
 
@@ -454,19 +453,30 @@ public class Exercises {
 	 altPairs("CodingHorror") → "Congrr"
 	 */
 	public String altPairs(String str) {
-		String alternateP = "";
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < str.length(); i++){
+
+			if(i%4 == 0 || i% 4 ==1)
+					sb.append(str.charAt(i));
+			}
+		return sb.toString();
+		}
+
+
+
+		/*String alternateP = "";
 
 		for (int i = 0; i < str.length(); i += 4)	{
 
-			alternateP += str.charAt(i );
+			alternateP += str.charAt(i);
 
 			if (i + 1 >= str.length()){
 				return alternateP;
 			}
 			alternateP += str.charAt(i + 1);
 		}
-		return alternateP;
-	}
+		return alternateP; */
+
 
 	/*
 	 Suppose the string "yak" is unlucky. Given a string, return a version where all the "yak" are removed.
