@@ -16,6 +16,9 @@ public class Exercises {
 	 array2List( {"Red", "Orange", "Yellow"} )  ->  ["Red", "Orange", "Yellow"]
 	 array2List( {"Left", "Right", "Forward", "Back"} )  ->  ["Left", "Right", "Forward", "Back"]
 	 */
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<String> (ordered collection of objects which can store duplicate values)
+	//array2List is the method name, it's variable is a String array called stringArray
 	public List<String> array2List(String[] stringArray) {
 		//Created a List<String> variable and assigned it to the address of the new instance
 		//The new keyword sets aside memory to hold an instance of the ArrayList
@@ -35,11 +38,15 @@ public class Exercises {
 	 list2Array( ["Red", "Orange", "Yellow"] )  ->  {"Red", "Orange", "Yellow"}
 	 list2Array( ["Left", "Right", "Forward", "Back"] )  ->  {"Left", "Right", "Forward", "Back"}
 	 */
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a String array
+	//list2Array is the method name, it's variable is a List<String> which is...
+	//an ordered collection of objects which can store duplicate values called stringList
 	public String[] list2Array(List<String> stringList) {
 		//created a String array variable called list2Array and assigned it to the address of the new instance
 		//the stringList.toArray method returns an array containing all of the elements in the stringList in proper sequence (from first to last element)
 		//The new keyword sets aside memory to hold an instance of the stringList
-		//the stringList.size() method returns the number of elements in the stringList
+		//the stringList.size() method returns the number of elements in the stringList (Returns the max # of elements/integers in the list)
 		String[] list2Array = stringList.toArray(new String[stringList.size()]);
 		//returns the value of the list2Array variable
 		return list2Array;
@@ -52,6 +59,9 @@ public class Exercises {
 	 no4LetterWords( {"Red", "White", "Blue"} )  ->  ["Red", "White"]
 	 no4LetterWords( {"Jack", "Jill", "Jane", "John", "Jim"} )  ->  ["Jim"]
 	 */
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<String> (ordered collection of objects which can store duplicate values)
+	//no4LetterWords is the method name, it's variable is a String array called stringArray
 	public List<String> no4LetterWords(String[] stringArray) {
 
 		//Created a List<String> variable and assigned it to the address of the new instance
@@ -59,7 +69,7 @@ public class Exercises {
 		//The ArrayList constructor () is invoked to initialize the instance to an empty list of the type used, in this case a list of strings.
 		List<String> no4LetterWords = new ArrayList<String>();
 
-		//Created foreach loop that reads for each testVar in the stringArray
+		//Created foreach loop that reads for each testVar in the stringArray.. do this
 		for(String testVar: stringArray){
 			//If statement that reads if the length of the testVar String value is NOT 4... then add the testVar to the no4LetterWords variable
 			if(testVar.length() != 4){
@@ -76,6 +86,10 @@ public class Exercises {
 	 arrayInt2ListDouble( {745, 23, 44, 9017, 6} ) -> [372.5, 11.5, 22, 4508.5, 3]
 	 arrayInt2ListDouble( {84, 99, 3285, 13, 877} ) -> [42, 49.5, 1642.5, 6.5, 438.5]
 	 */
+
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<Double> (ordered collection of objects which can store duplicate numerical-decimal values)
+	//arrayInt2ListDouble is the method name, it's variable is an int array called intArray
 	public List<Double> arrayInt2ListDouble(int[] intArray) {
 		//Created a List<Double> variable and assigned it to the address of the new instance
 		//The new keyword sets aside memory to hold an instance of the ArrayList
@@ -95,8 +109,16 @@ public class Exercises {
 	 findLargest( [987, 1234, 9381, 731, 43718, 8932] ) -> 43718
 	 findLargest( [34070, 1380, 81238, 7782, 234, 64362, 627] ) -> 81238
 	 */
+
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is an Integer (Wrapper Class)
+	//findLargest is the method name, it's variable is a List<Integer> which is...
+	//an ordered collection of objects which can store duplicate values called integerList
 	public Integer findLargest(List<Integer> integerList) {
+		//created an Integer (Wrapper Class) variable called largest and assigned it to the max value in the integerList
+		//Collections.max method returns the maximum element/integer of the integerList List
 		Integer largest = Collections.max(integerList);
+		//returns the value of the largest variable
 		return largest;
 	}
 
@@ -106,10 +128,15 @@ public class Exercises {
 	 oddOnly( {1143, 555, 7, 1772, 9953, 643} ) -> [1143, 555, 7, 9953, 643]
 	 oddOnly( {734, 233, 782, 811, 3, 9999} ) -> [233, 811, 3, 9999]
 	 */
+
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<Integer> (ordered collection of objects which can store duplicate values)
+	//oddOnly is the method name, it's variable is an Integer (Wrapper Class) array called integerArray
+	//Wrapper Class will convert primitive data types into objects
 	public List<Integer> oddOnly(Integer[] integerArray) {
 		//Created a List<Integer> variable and assigned it to the address of the new instance
 		//The new keyword sets aside memory to hold an instance of the ArrayList
-		//The ArrayList constructor () is invoked to initialize the instance to an empty list of the type used, in this case a list of doubles.
+		//The ArrayList constructor () is invoked to initialize the instance to an empty list of the type used, in this case a list of integers.
 		List<Integer> onlyOdds = new ArrayList<Integer>();
 		//Created foreach loop that reads.. for each modTheOdds in the integerArray.. do this..
 		for (Integer modTheOdds: integerArray){
@@ -130,6 +157,12 @@ public class Exercises {
 	 foundIntTwice( [6, 8, 10, 11, 13], 8 -> false
 	 foundIntTwice( [9, 9, 44, 2, 88, 9], 9) -> true
 	 */
+
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a boolean
+	//foundIntTwice is the method name, it's variables are List<Integer> integerList which is
+	//an ordered collection of objects which can store duplicate values called integerList
+	//And intToFind which is an integer variable
 	public boolean foundIntTwice(List<Integer> integerList, int intToFind) {
 		//created int variable count and initialized it to 0
 		//This was created because we want to count the # of times the same value is given in the list
@@ -160,14 +193,20 @@ public class Exercises {
 
 	HINT: To convert an Integer x to a String, you can use x.toString() in your code. For example, if x = 1, then x.toString() returns "1."
 	 */
+
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<String> (ordered collection of objects which can store duplicate values)
+	//fizzBuzzList is the method name, it's variable is an Integer array (Wrapper Class) called stringArray
 	public List<String> fizzBuzzList(Integer[] integerArray) {
 		//Created a List<String> variable and assigned it to the address of the new instance
 		//The new keyword sets aside memory to hold an instance of the ArrayList
 		//The ArrayList constructor () is invoked to initialize the instance to an empty list of the type used, in this case a list of strings.
 		List<String> fizzBuzzList = new ArrayList<String>();
 		//Created foreach loop that reads.. for each checkForFizzBuzz in the integerArray.. do this
+		//checkForFizzBuzz variable is the placeholder var for the values we are testing
 		for (Integer checkForFizzBuzz: integerArray){
 			//if statement that reads.. if the checkForFizzBuzz is divisible by 3 & divisible by 5.. then add "FizzBuzz" to the fizzBucketList var
+			//This if statement must come first as it is more exclusive than the other conditions
 			if (checkForFizzBuzz % 3 == 0 && checkForFizzBuzz % 5 == 0){
 				fizzBuzzList.add("FizzBuzz");
 				//else if statement that reads.. else if checkForFizzBuzz is divisible by 3.. then add "Fizz" to the fizzBucketList var
@@ -179,6 +218,7 @@ public class Exercises {
 				//else statement that reads.. else if none of the above conditions are met..
 				//adds checkForFizzBuzz int value(s) converted as a string (.toString method) to fizzBucketList var
 			} else {
+				//adds the checkForFizzBuzz integer value as a string to the fizzBuzzList variable
 				fizzBuzzList.add(checkForFizzBuzz.toString());
 			}
 		}
@@ -193,30 +233,33 @@ public class Exercises {
 	 list to the new list before returning it.
 	 interleaveLists( [1, 2, 3], [4, 5, 6] )  ->  [1, 4, 2, 5, 3, 6]
 	 */
-	public List<Integer> interleaveLists(List<Integer> listOne, List<Integer> listTwo) {
 
+	//Method is public meaning it's accessible outside the Class
+	//Method return type is a List<Integer> (ordered collection of objects which can store duplicate values)
+	//interLeaveLists is the method name, it's variables are List<Integer>'s... which are
+	//an ordered collection of objects which can store duplicate values called listOne & listTwo
+	public List<Integer> interleaveLists(List<Integer> listOne, List<Integer> listTwo) {
 		//Created a List<Integer> variable and assigned it to the address of the new instance
 		//The new keyword sets aside memory to hold an instance of the ArrayList
 		//The ArrayList constructor () is invoked to initialize the instance to an empty list of the type used, in this case a list of strings.
 		List<Integer> interLeave = new ArrayList<Integer>();
-
 		//Created for loop... that reads.. initialized i var at 0
-		//The condition is set to i variable is less than the greater of 2 integer values (1 of the 2 integers has to be greater than i)
+		//The condition is set to i variable is less than the greater of 2 integer values (1 of the 2 integers must be greater than i)
+		//The # of elements in the listOne & listTwo must be greater than i for this loop to continue
 		//the for loop will iterate once each loop (add to the value of i each loop)
 		for (int i = 0; i < Math.max(listOne.size(), listTwo.size()); i++) {
 			//Created if statement that reads if variable i is less than the number of elements in the listOne List
 			//then add the returned element at the (i) position  in the List
-			if ( i < listOne.size()){
+			if ( i <= listOne.size() -1){
 				interLeave.add(listOne.get(i));
 			}
 			//Created if statement that reads if variable i is less than the number of elements in the listTwo List
 			//then add the returned element at the (i) position in the List
-			if ( i < listTwo.size()){
+			if ( i <= listTwo.size() -1){
 				interLeave.add(listTwo.get(i));
 			}
 		}
 		//returns the value(s) of the interLeave variable
 		return interLeave;
 	}
-
 }
