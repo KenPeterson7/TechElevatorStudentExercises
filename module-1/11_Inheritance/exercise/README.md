@@ -42,23 +42,23 @@ The last category checks the edge case behaviors of a class. Are default values 
 
 The tests in the second and third categories are ignored until all the tests in the first category pass. That is, you'll need to create a well-formed class before the tests in the other categories are even run. Similarly, the edge case tests are ignored until the happy path tests pass. **Because the three categories are dependent upon one another, you need to run the tests on the class-level rather than individually running a test as you might normally do.**
 
-You don't need to successfully pass all three categories of the `BankAccount` tests before moving onto either the `CheckingAccount` or `SavingsAccount`, but you're strongly encouraged to successfully pass at least the happy path behavioral tests for the `BankAccount` class given the other two are subclasses of it.
+You don't need to successfully pass all three categories of the `com.techelevator.BankAccount` tests before moving onto either the `CheckingAccount` or `SavingsAccount`, but you're strongly encouraged to successfully pass at least the happy path behavioral tests for the `com.techelevator.BankAccount` class given the other two are subclasses of it.
 
-Finally, beyond saying the balance defaults to 0 and the constructors set the `accountHolderName` and `accountNumber` fields, the `BankAccount` specification is silent regarding the *state* of the class. For instance, there's no prohibition on initializing an account with balance less than 0, or depositing a negative amount. This is intentional. The exercise is on inheritance and overriding, *the tests only confirm the behaviors actually described in any of the specifications*.
+Finally, beyond saying the balance defaults to 0 and the constructors set the `accountHolderName` and `accountNumber` fields, the `com.techelevator.BankAccount` specification is silent regarding the *state* of the class. For instance, there's no prohibition on initializing an account with balance less than 0, or depositing a negative amount. This is intentional. The exercise is on inheritance and overriding, *the tests only confirm the behaviors actually described in any of the specifications*.
 
 ## Instructions
 
 Create three new classes to represent a bank account, savings account, and a basic checking account.
 
-### Step One: Implement the `BankAccount` class
+### Step One: Implement the `com.techelevator.BankAccount` class
 
-The `BankAccount` class represents a basic checking or savings account at a bank.
+The `com.techelevator.BankAccount` class represents a basic checking or savings account at a bank.
 
 
 | Constructor                                                              | Description                                                                                                                         |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BankAccount(String accountHolderName, String accountNumber)              | A new bank account requires an account holder name and account number. The balance defaults to a 0 dollar balance. |
-| BankAccount(String accountHolderName, String accountNumber, int balance) | A new bank account requires an account holder name and account number. The balance is initialized to the dollar balance given.  |
+| com.techelevator.BankAccount(String accountHolderName, String accountNumber)              | A new bank account requires an account holder name and account number. The balance defaults to a 0 dollar balance. |
+| com.techelevator.BankAccount(String accountHolderName, String accountNumber, int balance) | A new bank account requires an account holder name and account number. The balance is initialized to the dollar balance given.  |
 
 | Attribute Name    | Data Type | Get | Set     | Description                                                  |
 | ----------------- | --------- | --- | ------- | ------------------------------------------------------------ |
@@ -73,7 +73,7 @@ The `BankAccount` class represents a basic checking or savings account at a bank
 
 ### Step Two: Implement the `CheckingAccount` class
 
-A `CheckingAccount` "is-a" `BankAccount`, but it also has some additional rules:
+A `CheckingAccount` "is-a" `com.techelevator.BankAccount`, but it also has some additional rules:
 
 | Override Method | Description                                                                                                                                                          |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,7 +82,7 @@ A `CheckingAccount` "is-a" `BankAccount`, but it also has some additional rules:
 
 ### Step Three: Implement the `SavingsAccount` class
 
-A `SavingsAccount` "is-a" `BankAccount`, but it also has some additional rules:
+A `SavingsAccount` "is-a" `com.techelevator.BankAccount`, but it also has some additional rules:
 
 | Override Method | Description                                                                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,8 +93,8 @@ A `SavingsAccount` "is-a" `BankAccount`, but it also has some additional rules:
 *Sample usage*
 
 ```java
-BankAccount checkingAccount = new CheckingAccount("Bernice", "CHK:1234");
-BankAccount savingsAccount = new SavingsAccount("Bernice", "SAV:9876");
+com.techelevator.BankAccount checkingAccount = new CheckingAccount("Bernice", "CHK:1234");
+com.techelevator.BankAccount savingsAccount = new SavingsAccount("Bernice", "SAV:9876");
 
 int amountToDeposit = 2;
 int newBalance = checkingAccount.deposit(amountToDeposit);
@@ -104,13 +104,13 @@ int newBalance = checkingAccount.deposit(amountToDeposit);
 
 The industry standard way to deal with decimal numbers in Java is with the `BigDecimal` class.
 
-Can you add a new implementation for `BankAccount`, `CheckingAccount`, and `SavingsAccount` that uses `BigDecimal` for the `getBalance`, `withdraw`, and `deposit` methods instead of `int`? To do this, create a new package within `src/main/java` and name it `com.techelevator.challenge`.
+Can you add a new implementation for `com.techelevator.BankAccount`, `CheckingAccount`, and `SavingsAccount` that uses `BigDecimal` for the `getBalance`, `withdraw`, and `deposit` methods instead of `int`? To do this, create a new package within `src/main/java` and name it `com.techelevator.challenge`.
 
-There are no tests associated with the challenge. Be sure to submit your work using `int` in the `BankAccount`, `CheckingAccount`, and `SavingsAccount` classes.
+There are no tests associated with the challenge. Be sure to submit your work using `int` in the `com.techelevator.BankAccount`, `CheckingAccount`, and `SavingsAccount` classes.
 
 ## Tips and tricks
 
-* A good way to determine if you're implementing inheritance correctly is to read the code or classes out loud. A child class "is-a" type of its parent. For instance, a CheckingAccount "is-a" BankAccount. Is a BankCustomer a BankAccount, or does a BankCustomer have a BankAccount? Thinking about the relationships of objects in these terms helps you to quickly identify opportunities to improve your code.
+* A good way to determine if you're implementing inheritance correctly is to read the code or classes out loud. A child class "is-a" type of its parent. For instance, a CheckingAccount "is-a" com.techelevator.BankAccount. Is a BankCustomer a com.techelevator.BankAccount, or does a BankCustomer have a com.techelevator.BankAccount? Thinking about the relationships of objects in these terms helps you to quickly identify opportunities to improve your code.
 
 ---
 

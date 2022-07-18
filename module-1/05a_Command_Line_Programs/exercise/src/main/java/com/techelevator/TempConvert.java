@@ -11,9 +11,10 @@ public class TempConvert {
 		//Told the system to output a question to the user asking them to input the temperature
 		System.out.print("Please enter the temperature: ");
 		//Created an int variable called temperature that stores the value of the test variable as an integer
-		int temperature = test.nextInt();
-		//Told the system to store the last entered value in the test variable
-		test.nextLine();
+		String temperature = test.nextLine();
+		int f2 = Integer.parseInt(temperature);
+		//Told the system to consume the next line
+		//test.nextLine();
 		//Told the system to output a question to the user asking if the temperature was Fahrenheit or Celsius
 		System.out.print("Is the temperature in (C)elsius, or (F)arenheit? ");
 		//System Creates a string variable called tempDecision and stores the user's last input as the value
@@ -23,7 +24,7 @@ public class TempConvert {
 		//System calls on the tempChange method to determine/calculate the conversion based on the temperate & tempDecision that the user input
 		//System converts output to uppercase,
 		//System returns C (Celsius) when the inputDecision is F, else return F (meaning the input is not F)
-		System.out.println(temperature + tempDecision + " is " + tempChange(temperature, tempDecision) + (tempDecision.toUpperCase().startsWith("F") ? "C" : "F"));
+		System.out.println(f2 + tempDecision + " is " + tempChange(f2, tempDecision) + (tempDecision.toUpperCase().startsWith("F") ? "C" : "F"));
 	}
 
 	//method for converting temperature input to Fahrenheit/Celsius (based on the tempDecision) and returns the converted result

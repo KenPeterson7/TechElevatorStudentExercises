@@ -26,9 +26,9 @@ public class SavingsAccountTest {
             // Assert SavingsAccount class exists
             savingsAccountClass = Class.forName("com.techelevator.SavingsAccount");
 
-            // Assert SavingsAccount extends BankAccount
+            // Assert SavingsAccount extends com.techelevator.BankAccount
             Class superclass = savingsAccountClass.getSuperclass();
-            assertEquals("SavingsAccount must extend BankAccount.", superclass.getName(),"com.techelevator.BankAccount");
+            assertEquals("SavingsAccount must extend com.techelevator.BankAccount.", superclass.getName(),"com.techelevator.BankAccount");
 
             // Assert constructors exist
             twoArgConstructor = SafeReflection.getConstructor(savingsAccountClass, String.class, String.class);
@@ -43,7 +43,7 @@ public class SavingsAccountTest {
             Method withdrawMethod = SafeReflection.getMethod(savingsAccountClass, "withdraw", int.class);
             assertEquals("SavingsAccount must override withdraw(int). Make sure access for the method is public.", withdrawMethod.getDeclaringClass().getName(),"com.techelevator.SavingsAccount");
 
-            // Assert BankAccount fields are NOT redefined in SavingsAccount
+            // Assert com.techelevator.BankAccount fields are NOT redefined in SavingsAccount
             Field accountHolderNameField = SafeReflection.getDeclaredField(savingsAccountClass, "accountHolderName");
             assertEquals("SavingsAccount must not redefine the field accountHolderName.", null, accountHolderNameField);
             Field accountNumberField = SafeReflection.getDeclaredField(savingsAccountClass, "accountNumber");
@@ -51,7 +51,7 @@ public class SavingsAccountTest {
             Field balanceField = SafeReflection.getDeclaredField(savingsAccountClass, "balance");
             assertEquals("SavingsAccount must not redefine the field balance.", null, balanceField);
 
-            // Assert BankAccount getters/setters are NOT redefined in SavingsAccount
+            // Assert com.techelevator.BankAccount getters/setters are NOT redefined in SavingsAccount
             Method accountHolderNameGetter = SafeReflection.getMethod(savingsAccountClass, "getAccountHolderName");
             assertEquals("SavingsAccount must not redefine getter getAccountHolderName().","com.techelevator.BankAccount", accountHolderNameGetter.getDeclaringClass().getName());
             Method accountHolderNameSetter = SafeReflection.getMethod(savingsAccountClass, "setAccountHolderName", String.class);
@@ -65,7 +65,7 @@ public class SavingsAccountTest {
             Method balanceSetter = SafeReflection.getMethod(savingsAccountClass, "setBalance", Integer.TYPE);
             assertEquals("SavingsAccount must not redefine setter setBalance(int).", null, balanceSetter);
 
-            // Assert BankAccount methods are NOT redefined in SavingsAccount
+            // Assert com.techelevator.BankAccount methods are NOT redefined in SavingsAccount
             Method depositMethod = SafeReflection.getMethod(savingsAccountClass, "deposit", int.class);
             assertEquals("SavingsAccount must not redefine deposit(int).","com.techelevator.BankAccount", depositMethod.getDeclaringClass().getName());
 

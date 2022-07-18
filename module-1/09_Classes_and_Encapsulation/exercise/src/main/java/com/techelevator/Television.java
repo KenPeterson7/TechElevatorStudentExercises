@@ -21,7 +21,6 @@ public class Television {
             currentVolume = 2;
         }
     }
-
     //public method (accessible outside of the class)
     //return type is void meaning it returns nothing
     //changeChannel is the method name w/ an instance int var newChannel
@@ -34,7 +33,6 @@ public class Television {
             }
         }
     }
-
     //public method (accessible outside of the class)
     //return type is void meaning it returns nothing
     //channelUp is the method name
@@ -49,7 +47,6 @@ public class Television {
             }
         }
     }
-
     //public method (accessible outside of the class)
     //return type is void meaning it returns nothing
     //channelDown is the method name
@@ -64,7 +61,6 @@ public class Television {
             }
         }
     }
-
 
     public void raiseVolume(){
         if(isOn){
