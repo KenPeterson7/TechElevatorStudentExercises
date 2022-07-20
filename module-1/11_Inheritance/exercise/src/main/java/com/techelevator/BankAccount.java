@@ -3,26 +3,29 @@ package com.techelevator;
 public class BankAccount {
 
     //instance vars
+
     private String accountHolderName;
     private String accountNumber;
     private int balance;
 
-    //default constructor
-    //public BankAccount(){}
+    public BankAccount() {}
 
-    //constructors
-    public BankAccount(String accountHolderName, String accountNumber){
+    public BankAccount(String accountHolderName, String accountNumber) {
+
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountNumber;
+        balance = 0;
     }
 
-    public BankAccount(String accountHolderName, String accountNumber, int balance){
+    public BankAccount(String accountHolderName, String accountNumber, int balance) {
+
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
 
     //getters
+
     public String getAccountHolderName() {
         return accountHolderName;
     }
@@ -35,16 +38,17 @@ public class BankAccount {
         return balance;
     }
 
-    //Deposit method
-    public int deposit(int amountToDeposit){
-        balance += amountToDeposit;
+    //methods
+
+    public int deposit(int amountToDeposit) {
+        balance += amountToDeposit; // adds a deposit to balance
         return balance;
     }
 
-    //Withdraw method
-    public int withdraw(int amountToWithdraw){
-        balance -= amountToWithdraw;
+    public int withdraw(int amountToWithdraw) {
+        balance -= amountToWithdraw; // subtracts a withdraw from balance
         return balance;
     }
+
 }
 

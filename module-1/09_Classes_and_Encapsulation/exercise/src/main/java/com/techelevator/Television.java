@@ -67,8 +67,8 @@ public class Television {
             if(currentVolume < 10) {
                 currentVolume += 1;
             }
-            }
         }
+    }
 
     public void lowerVolume(){
         if(isOn){
