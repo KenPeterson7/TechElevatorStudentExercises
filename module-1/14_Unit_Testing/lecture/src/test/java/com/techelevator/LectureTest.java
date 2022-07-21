@@ -1,10 +1,6 @@
 package com.techelevator;
 
-import org.junit.After; // The @After annotation is used to execute a method after every test
-import org.junit.Assert; // The Assert class has static assertion methods for validating test results
-import org.junit.Before; // The @Before annotation is used to execute a method before every test
-import org.junit.Test; // The @Test annotation is used to label methods that should be run as tests
-import org.junit.FixMethodOrder;
+import org.junit.*;
 import org.junit.runners.MethodSorters;
 
 /* Like all other Java code, unit testing code is defined within a class.
@@ -19,6 +15,13 @@ import org.junit.runners.MethodSorters;
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LectureTest {
+
+	/*If a method is annotated with @BeforeClass, it will be executed before all the tests in the class
+	it doesn't run before every method like @Before does, just one time before everything.*/
+	@BeforeClass
+	public static void runBeforeEverything(){
+		System.out.println("Before Class");
+	}
 
 	/* If a method is annotated with @Before, it will be executed immediately prior to every test.
 	 * It is intended to be used when there is a repetitive setup (i.e. "Arrange") task that is

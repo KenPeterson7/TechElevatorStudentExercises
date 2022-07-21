@@ -24,6 +24,7 @@ public class ShoppingCart {
 		double subtotal = 0.0;
 		for (Purchasable item : itemsToBuy) {
 			subtotal += item.getPrice();
+			subtotal2 = item.get(0);
 		}
 		return subtotal;
 	}
@@ -32,10 +33,12 @@ public class ShoppingCart {
 		// Apply the tax rate to the price of all the taxable items
 		double tax = 0.0;
 		for (Purchasable item : itemsToBuy) {
-			tax += item.getPrice() * this.taxRate;
+			if (item.isTaxable()) {
+				tax += item.getPrice() * this.taxRate;
+			}
 		}
-		return tax;
-	}
+			return tax;
+		}
 
 	public double getTotalPrice() {
 		// Sum the price of all items, plus the tax rate applied to the price of only taxable items

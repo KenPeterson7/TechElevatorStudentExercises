@@ -1,4 +1,6 @@
-package com.techelevator.farm;
+package com.techelevator.farm.food;
+
+import com.techelevator.farm.interfaces.Sellable;
 
 import java.math.BigDecimal;
 

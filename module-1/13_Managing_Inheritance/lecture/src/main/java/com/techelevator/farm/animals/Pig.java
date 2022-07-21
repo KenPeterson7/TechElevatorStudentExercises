@@ -1,4 +1,6 @@
-package com.techelevator.farm;
+package com.techelevator.farm.animals;
+
+import com.techelevator.farm.interfaces.Sellable;
 
 import java.math.BigDecimal;
 
@@ -11,6 +13,12 @@ public class Pig extends FarmAnimal implements Sellable {
     }
 
     public BigDecimal getPrice() {
+
         return price;
+
+    }
+
+    public String eat(){
+        return "Chewing down on some slop";
     }
 }
