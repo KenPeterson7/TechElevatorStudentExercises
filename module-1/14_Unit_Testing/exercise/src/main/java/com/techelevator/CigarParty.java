@@ -12,13 +12,18 @@ public class CigarParty {
      haveParty(70, true) → true
      */
     public boolean haveParty(int cigars, boolean isWeekend) {
+        //instance vars
         int minimumCigarCount = 40;
         int maximumCigarCount = 60;
 
+        //this boolean is true if cigars are greater than 40
         boolean hasMinimumCigars = cigars >= minimumCigarCount;
+        //this boolean is true if it's not the weekend & cigars are less than or equal to 60, or it's the weekend
         boolean withinMaxRangeOfCigars = (!isWeekend && cigars <= maximumCigarCount) || isWeekend;
+        //this boolean is true when both booleans above are true, else it stores false
         boolean successful = hasMinimumCigars && withinMaxRangeOfCigars;
 
+        //returns whatever value successful is  storing
         return successful;
     }
 

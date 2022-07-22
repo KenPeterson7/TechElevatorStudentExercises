@@ -13,14 +13,20 @@ public class DateFashion {
     dateFashion(5, 5) → 1
     */
     public int getATable(int you, int date) {
+        //getTable variable assigned to a value of 1
+        //average people chances
         int getTable = 1;
 
+        //if your style is less than or equal to 2 or your dates style is less than or equal to 2..
         if (you <= 2 || date <= 2) {
+            //you get noooo table
             getTable = 0;
+            //your style is greater than or equal to an 8 or your dates style is greater than or equal to an 8
         } else if (you >= 8 || date >= 8) {
+            //you get a table quick
             getTable = 2;
         }
-
+        //returns your chances of getting a table as an int
         return getTable;
     }
 
