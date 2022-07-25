@@ -58,3 +58,7 @@ Passcode: w6*v74AV
 Day 15 Review
 https://techelevator.zoom.us/rec/share/xMkybXi37pfzeFlKq_ajbyHsYjErL4GvOvZvEE0Cuh7-7c_UoEJZ32mXgUO3T_dQ.BhY2ORarmz6lmFVJ
 Passcode: 5!Pf3=50
+
+Day 16 Exception handling & File I/O
+https://techelevator.zoom.us/rec/share/FPTkcwnjCZerjSNXAYKz6t4tAnhuYk0MskZKwefCg5s6oTPLT1aOMKYEvYobku8V.7QTriKWKuKSm3xKX
+Passcode: ?BDjg#2Z
