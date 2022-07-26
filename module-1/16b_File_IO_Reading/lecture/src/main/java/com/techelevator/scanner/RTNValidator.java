@@ -38,11 +38,11 @@ public class RTNValidator {
 		System.out.print("Please enter path to input file >>> ");
 		String path = userInput.nextLine();
 		
-		File inputFile = new File(path);
+		File inputFile = new File(path); //create new file object in memory
 		if(inputFile.exists() == false) { // checks for the existence of a file
 			System.out.println(path+" does not exist");
 			System.exit(1); // Ends the program
-		} else if(inputFile.isFile() == false) {
+		} else if(inputFile.isFile() == false) { // and is actually a file
 			System.out.println(path+" is not a file");
 			System.exit(1); // Ends the program
 		}

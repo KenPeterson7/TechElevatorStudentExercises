@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ExceptionsLecture {
 
 	public static void main(String[] args) {
+		//instantiated new Scanner object
 		Scanner scan = new Scanner(System.in);
 		
 		/* By default, when an Exception is thrown, it will "bubble up" through the call stack until
@@ -14,7 +15,7 @@ public class ExceptionsLecture {
 		 * By using try/catch blocks, you can stop the Exception from exiting the method and provide
 		 * code to handle it. */
 		System.out.println("The following cities: ");
-		String[] cities = new String[] { "Cleveland", "Columbus", "Cincinatti" };
+		String[] cities = new String[] { "Cleveland", "Columbus", "Cincinnati" };
 		try {
 			System.out.println(cities[0]);
 			System.out.println(cities[1]);
@@ -30,7 +31,7 @@ public class ExceptionsLecture {
 		
 		/* try/catch blocks will also catch Exceptions that are thrown from method calls further down the stack */
 		try {
-			System.out.println("Hey ya'll, watch this!");
+			System.out.println("Hey y'all, watch this!");
 			doSomethingDangerous();  // throws an ArrayIndexOutOfBoundsException
 			System.out.println("See, I told you nothing would go wrong!");
 		} catch(ArrayIndexOutOfBoundsException e) {  
@@ -54,7 +55,7 @@ public class ExceptionsLecture {
 				
 		/* we can throw our own Exceptions in response to exceptional cases 
 		 * see the source code of calculateHotelRoomCharges for an example */
-		int nights = -3;
+		int nights = 3;
 		int numberOfGuests = 2;
 		try {
 			double amountOwed = calculateHotelRoomCharges(nights, numberOfGuests);
@@ -76,6 +77,7 @@ public class ExceptionsLecture {
 		} catch(OverdraftException e) {
 			System.out.println("Unfortunately, you can't withdraw more money than you have in the bank...");
 			System.out.println("The requested amount would overdraw the account by "+e.getOverdraftAmount());
+			System.out.println("The requested amount would overdraw the account by "+e.getMessage());
 		}
 		System.out.println();
 		

@@ -18,6 +18,7 @@ public class WordCount {
 	 * getCount(["c", "b", "a"]) → {"c": 1, "b": 1, "a": 1}
 	 *
 	 */
+
 	public Map<String, Integer> getCount(String[] words) {
 		Map<String, Integer> output = new HashMap<>();
 

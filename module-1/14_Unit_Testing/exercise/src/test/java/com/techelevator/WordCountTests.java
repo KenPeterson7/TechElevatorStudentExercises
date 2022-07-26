@@ -11,13 +11,14 @@ import static org.junit.Assert.assertEquals;
 public class WordCountTests {
 
     //created a new instance (object) of the WordCount Class
+    //wordCount var was created to store the actual result
     WordCount wordCount = new WordCount();
 
     @Test
     public void get_count_for_ba_ba_black_sheep(){
         //instantiated new Map object and named it expectedResult
         Map<String, Integer> expectedResult = new HashMap<>();
-        //added the test elements to the Map
+        //added the expected test elements to the Map
         expectedResult.put("ba", 2);
         expectedResult.put("black", 1);
         expectedResult.put("sheep", 1);
@@ -25,6 +26,7 @@ public class WordCountTests {
         //and store it in wordCount variable for comparison
         String[] actualResult = {"ba", "ba", "black", "sheep"};
         assertEquals("incorrect array returned", expectedResult, wordCount.getCount(actualResult));
+
     }
 
     @Test
@@ -33,7 +35,7 @@ public class WordCountTests {
         expectedResult.put("a", 2);
         expectedResult.put("b", 2);
         expectedResult.put("c", 1);
-        String[] actualResult = {"a", "b", "a", "c", "b"};
+        String[] actualResult = {"a", "b", "b", "c", "a"};
         assertEquals("incorrect array returned", expectedResult, wordCount.getCount(actualResult));
     }
 
