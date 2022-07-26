@@ -62,3 +62,7 @@ Passcode: 5!Pf3=50
 Day 16 Exception handling & File I/O
 https://techelevator.zoom.us/rec/share/FPTkcwnjCZerjSNXAYKz6t4tAnhuYk0MskZKwefCg5s6oTPLT1aOMKYEvYobku8V.7QTriKWKuKSm3xKX
 Passcode: ?BDjg#2Z
+
+Day 17 File Writing
+https://techelevator.zoom.us/rec/share/Ad231nrET8I-wTpVlQBQXXrhrAjhZv7rLy0WPHu1URs6HzeR7wRYf5YMGvs9ybnO.hGsi31WiB1KDAabh
+Passcode: pM4004P*
