@@ -18,7 +18,7 @@ public class FizzWriter {
 			String filePath = input.nextLine();
 			//instantiated File object to store the file path in the testFile variable
 			File testFile = new File(filePath);
-			//created try w/ resoruces block to automatcally close the PrintWriter (output stream)
+			//created try w/ resources block to automatically close the PrintWriter (output stream)
 			//instantiated PrintWriter object and assigned it to ghostWriter
 			try (PrintWriter ghostwriter = new PrintWriter(testFile)) {
 				//initialized num to 1, loops until num is 301 or greater, num iterates onces each loop (loops 300 times)

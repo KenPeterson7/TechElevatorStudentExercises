@@ -2,7 +2,7 @@ package com.techelevator;
 
 public class Exercise05_Weather {
 
-    private final static int FREEZING_TEMPERATURE = 32;
+
 
     /*
     GaleForce Meteorologists recently developed a new weather station and need it to perform
@@ -23,15 +23,18 @@ public class Exercise05_Weather {
 	belowFreezing([33, 30, 32, 37, 44, 31, 41]) → 3
 	belowFreezing([-7, -3, 19, 35, 30])  → 4
 	belowFreezing([]) → 0
+
     */
-	public int belowFreezing(int[] dailyHighs) {
-        int count = 0;
+
+    private final static int FREEZING_TEMPERATURE = 32;
+
+    public int belowFreezing(int[] dailyHighs) {
+        int counter = 0;
         for(int i = 0; i < dailyHighs.length; i++){
             if(dailyHighs[i] <= FREEZING_TEMPERATURE){
-                count+= 1;
+                counter++;
             }
-        }
-		return count;
+        } return counter;
 	}
 
     /*
@@ -49,7 +52,7 @@ public class Exercise05_Weather {
 	hottestDay([55]) → 55
      */
     public int hottestDay(int[] dailyHighs) {
-        int maxTemperature = -1000000;
+        int maxTemperature = -100;
         for(int i=0;i<dailyHighs.length;i++)
         {
             if(dailyHighs[i]>maxTemperature)

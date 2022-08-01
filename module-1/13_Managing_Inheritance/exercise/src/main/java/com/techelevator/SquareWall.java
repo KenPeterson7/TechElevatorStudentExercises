@@ -5,9 +5,9 @@ public class SquareWall extends RectangleWall {
     private int sideLength;
 
 
-    public SquareWall(String name, String color, int length, int height) {
+   /* public SquareWall(String name, String color, int length, int height) {
         super(name, color, length, height);
-    }
+    } */
 
     public SquareWall(String name, String color, int sideLength) {
         super(name, color, sideLength, sideLength);

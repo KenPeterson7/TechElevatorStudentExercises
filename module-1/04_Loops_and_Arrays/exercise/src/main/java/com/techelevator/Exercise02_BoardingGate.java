@@ -46,14 +46,17 @@ public class Exercise02_BoardingGate {
     getAvailableSeatCount([]) → 0
      */
     public int getAvailableSeatCount(boolean[] seatingChart) {
-
         int count = 0;
-        for(int i = 0; i < seatingChart.length; i++){
-            if (seatingChart[i])
-                ++count;
+        for (int i = 0; i < seatingChart.length; i++) {
+            if (seatingChart[i]) {
+                count++;
+            }
         }
         return count;
     }
+
+
+
 
     /*
     The crew determined that it would be nice to know how many rows on the plane are at full occupancy.

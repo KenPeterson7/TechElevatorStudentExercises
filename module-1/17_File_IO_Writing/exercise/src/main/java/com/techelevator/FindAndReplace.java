@@ -2,6 +2,7 @@ package com.techelevator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -25,6 +26,8 @@ public class FindAndReplace {
         //these don't have to be instantiated in the try block because they just hold file paths, only streams (I/O) need to be closed
         File sourceFile = new File(source);
         File destinationFile = new File(destination);
+        //FileOutputStream outputStream = new FileOutputStream(destinationFile, true);
+
         //these objects were instantiated in the try block because they are input/output streams that have to be closed when they are finished!!
         //instantiated scanner object to open/read the source file, & PrintWriter object and passed the destination file path to write output into that file
         try(Scanner readSourceFile = new Scanner(sourceFile);
@@ -36,7 +39,7 @@ public class FindAndReplace {
                 //prints the returned lines to the user entered destination file, replaces all the words in word w/ the user entered replace word
                 ghostWriter.println(someText.replaceAll(word, replaceWord));
             }
-            //catch statement to catch a FileNotFoundException in case the source file the user entered doesn't exist
+            //catch statement to catch a FileNotFoundException in case the source file the user passed to the Scanner doesn't exist
         } catch(FileNotFoundException e){
             //print out the returned generic message from FileNotFoundException
             System.out.println(e.getMessage());

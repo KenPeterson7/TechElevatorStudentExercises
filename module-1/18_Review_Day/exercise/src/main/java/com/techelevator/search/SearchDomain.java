@@ -52,11 +52,33 @@ public class SearchDomain {
 	 * @throws SearchDomainException
 	 */
 	private List<String> buildDomain() throws SearchDomainException {
+		//instantiate List of Strings to loop through the files
 		List<String> files = new ArrayList<>();
-		// Step Three: Complete the buildDomain method
 
-
-			
+		//Instantiated File object to hold the folder of files..
+			File dataDirectory = new File(folder);
+			//if the folder is a directory
+			if(dataDirectory.isDirectory()){
+				//for each file in the folder...
+				for (File file : dataDirectory.listFiles()) {
+					//if the file is a file...
+					if(file.isFile()){
+						try{
+							//add the file to the the Files list of Strings
+							files.add(file.getCanonicalPath());
+							//exception to handle if the file is not able to be added since getCanonicalPath throws IO exception
+						} catch(IOException e){
+							//throw exception with this message...
+							throw new SearchDomainException("Exception adding " + file.getName() + " to folder " + folder);
+						}
+					}
+			}
+				//otherwise
+			} else{
+				//throw an exception for an invalid directory
+				throw new SearchDomainException(folder + " is not a valid directory");
+			}
+			//return the files added to the Files List
 		return files;
 	}
 	

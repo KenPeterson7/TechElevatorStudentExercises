@@ -52,7 +52,7 @@ Optionally, you may also use one of the following separator characters between t
 
 While reading the file, be sure to handle any I/O exceptions that may occur. Display a message to inform the user about the error. *Remember that it's never a good idea to display the raw exception message to the user.*
 
-Here's an example of what your application could look like:
+Here's an example of what your application counld look like:
 
 ```
 What is the fully qualified name of the file that should be searched?

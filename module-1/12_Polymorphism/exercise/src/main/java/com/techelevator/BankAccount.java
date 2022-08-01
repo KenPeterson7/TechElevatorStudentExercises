@@ -52,12 +52,12 @@ public class BankAccount implements Accountable {
     public int transferTo(BankAccount destinationAccount, int transferAmount){
         //assigned newBalance (int var) to the value of what the current balance is minus the transfer amount
         //this variable is needed to determine the new balance & which condition it meets in the if-else statement
-        int newBalance = this.getBalance() - transferAmount;
+        int newBalance = getBalance() - transferAmount;
         //if statement that reads if the newBalance is less than 0.. do this..
         //assuming that you can't make a withdrawal when you have less than 0 in your account
         if(newBalance < 0) {
             //just return the current balance
-            return this.getBalance();
+            return getBalance();
             //else.. if the newBalance is greater than 0.. do this..
         } else{
             //withdraws the transfer amount from this account
@@ -70,6 +70,6 @@ public class BankAccount implements Accountable {
             destinationAccount.deposit(transferAmount);
         }
         //returns the current balance of the account
-        return this.balance;
+        return getBalance();
     }
 }

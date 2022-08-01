@@ -1,5 +1,5 @@
 package com.techelevator;
-
+import java.util.Arrays;
 public class Exercise04_Cards {
 
     /*
@@ -42,6 +42,8 @@ public class Exercise04_Cards {
     discardFirstCard(["K-C", "Q-D", "J-H", "10-S", "Q-C"]) → ["Q-D", "J-H", "10-S", "Q-C"]
      */
     public String[] discardFirstCard(String[] hand) {
+        String [] test;
+       // test = hand.Array.shift();
         return new String[] {hand[1], hand[2], hand[3], hand[4]};
     }
 

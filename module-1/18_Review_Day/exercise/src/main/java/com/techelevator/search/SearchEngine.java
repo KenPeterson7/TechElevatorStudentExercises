@@ -1,5 +1,7 @@
 package com.techelevator.search;
 
+import com.techelevator.util.TELog;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -13,9 +15,11 @@ import java.util.Set;
 
 public class SearchEngine {
 
+	//instance vars
 	private SearchDomain sd;
 	private Map<String, List<WordLocation>> indexedWords = null;
 
+	//constructor
 	public SearchEngine(SearchDomain sd) {
 		this.sd = sd;
 		this.indexedWords = new HashMap<>();
@@ -24,6 +28,30 @@ public class SearchEngine {
 	public void indexFiles() throws SearchEngineException, Exception {
 		// Step Five: Index files
 
+		//instantiated new List of Strings fileNames to retrieve the list of filenames in the SearchDomain (sd)
+		List<String> fileNames = sd.getFiles();
+		//for loop that loops through all the elements in the fileNames List
+		for(int i = 0; i < fileNames.size(); i++){
+			//Instantiated File object to store the filepath of each index (i)
+			File file = new File(fileNames.get(i));
+			//instantiated ScanFile object to read the contents of the file one line at a time... passed the file object to the scanner object
+			try(Scanner scanFile = new Scanner(file)){
+				//while the scanner has more lines to return..
+				while(scanFile.hasNextLine()){
+					//assign the next line that is returned to the String line variable
+					String line = scanFile.nextLine();
+					//pass each line to the indexWords method
+					//this method takes in an index + the line
+					indexWords(i, line);
+				}
+				//handling exceptions for the scanner
+			}catch(FileNotFoundException e){
+				//throw this exception message...
+				throw new SearchEngineException(e.getMessage());
+			}
+		}
+		//logged the complete index of the words after looping through the list
+		TELog.log("Indexed words: \n" + indexedWordsToString());
 
 	}
 	

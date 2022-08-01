@@ -25,7 +25,7 @@ public class Lecture {
 
 		//Instantiated a file object and ran some of the file methods on it. Also checked to see if it exists first.
 		//create the file
-		File myTestFile = new File( "myTestDirectory", "myFile.txt");
+		File myTestFile = new File( "myTestDirectory", "myFile2.txt");
 		//String someTextForMyFile = userInput.nextLine();
 		//Instantiated PaintWriter object and passed myTestFile (File object)
 		FileOutputStream outputStream = new FileOutputStream(myTestFile, true);
@@ -49,11 +49,9 @@ public class Lecture {
 		ghostWriter.close();
 		//assigned someTextForMyFile to some random text
 		//get some text
-
 		//write whatever commands to the buffer
 
-
-		/*if(myTestFile.exists()){
+		if(myTestFile.exists()){
 			System.out.println("File name: " + myTestFile.getName());
 			System.out.println("Absolute: " + myTestFile.getAbsolutePath());
 			System.out.println("Writeable: " + myTestFile.canWrite());
@@ -79,7 +77,7 @@ public class Lecture {
 			//if it does not exist, then we create it
 			myTestDirectory.mkdir();
 			System.out.println(myTestDirectory.getName() + " has been created.");
-		} */
+		}
 
 
 	}

@@ -24,6 +24,7 @@ public class RectangleWall extends Wall {
         return length * height;
     }
 
+    @Override
     public String toString(){
         return getName() + " (" + getLength() + "x" + getHeight() + ") " + "rectangle";
     }
