@@ -54,7 +54,6 @@ public class SearchDomain {
 	private List<String> buildDomain() throws SearchDomainException {
 		//instantiate List of Strings to loop through the files
 		List<String> files = new ArrayList<>();
-
 		//Instantiated File object to hold the folder of files..
 			File dataDirectory = new File(folder);
 			//if the folder is a directory

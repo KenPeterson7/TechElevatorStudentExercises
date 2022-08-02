@@ -21,6 +21,9 @@ public class Application {
 			SearchDomain searchDomain = new SearchDomain("data");
 			//called on the TELog log() method, passed in our searchDomain and converted it to a String
 			//(this will be sent to the log when the application runs...
+
+			//calling the static method log  and passing in the String data by passing in the
+			// variable and calling on a toString method
 			TELog.log(searchDomain.toString());
 			
 			
