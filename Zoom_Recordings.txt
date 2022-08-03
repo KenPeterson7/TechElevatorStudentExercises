@@ -70,3 +70,7 @@ Passcode: pM4004P*
 Day 18 Intro to Databases
 https://techelevator.zoom.us/rec/share/OzL6VDee77wP645YZRKwCD_xSRkaAepbVAVK_nZ6jMlYJ6Cwjv83brVoW6ynhL0E.tosSQb2y8W_fnlCz
 Passcode: uI@i7=8z
+
+Day 19 Ordering Limiting and Grouping
+https://techelevator.zoom.us/rec/share/GlWqINJj7XdS-XptJIQkPC3tKOUTEBNTxmHOBxU5TOUB5p6ZRUR8HGITySc88ZpE.CzJJ5Ba60WiNnUbm
+Passcode: 0Gd&H8M&
