@@ -1,0 +1,10 @@
+select * from department;
+select * from employee;
+select * from project;
+select * from timesheet;
+select * from project_employee;
+
+
+select department_id, name from department where department_id = 1;
+
+select * from employee join project_employee on project_employee.employee_id = employee.employee_id where project_id = ?;
