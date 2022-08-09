@@ -9,6 +9,7 @@ public interface CustomerDao {
     // Step Four: Add a new DAO method
 
 
+    Customer getCustomer(int customerId);
 
 
 

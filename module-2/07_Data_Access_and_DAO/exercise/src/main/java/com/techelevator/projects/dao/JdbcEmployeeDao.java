@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.techelevator.projects.model.Employee;
+import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 public class JdbcEmployeeDao implements EmployeeDao {
 
@@ -19,31 +20,72 @@ public class JdbcEmployeeDao implements EmployeeDao {
 	
 	@Override
 	public List<Employee> getAllEmployees() {
-		return new ArrayList<>();
+		List<Employee> employees = new ArrayList<>();
+		String sql = "select * from employee;";
+		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+		while (results.next()) {
+			employees.add(mapRowToEmployee(results));
+		}
+		return employees;
 	}
 
 	@Override
 	public List<Employee> searchEmployeesByName(String firstNameSearch, String lastNameSearch) {
-		return List.of(new Employee());
+		List<Employee> employees = new ArrayList<>();
+		String searchTerm1 = "%"+firstNameSearch+"%";
+		String searchTerm2 = "%"+lastNameSearch+"%";
+		String sql = "select * from employee where first_name ilike ? and last_name ilike ?;";
+		SqlRowSet results =jdbcTemplate.queryForRowSet(sql, searchTerm1, searchTerm2);
+		while(results.next()){
+			employees.add(mapRowToEmployee(results));
+		}
+		return employees;
 	}
 
 	@Override
 	public List<Employee> getEmployeesByProjectId(int projectId) {
-		return new ArrayList<>();
+
+		List<Employee> employees = new ArrayList<>();
+		String sql = "select * from employee join project_employee on project_employee.employee_id = employee.employee_id where project_id = ?;";
+		SqlRowSet results = jdbcTemplate.queryForRowSet(sql, projectId);
+		while(results.next()){
+			employees.add(mapRowToEmployee(results));
+		}
+
+		return employees;
 	}
 
 	@Override
 	public void addEmployeeToProject(int projectId, int employeeId) {
+		String sql = "insert into project_employee(project_id, employee_id) values (?, ?)";
+		jdbcTemplate.update(sql, projectId, employeeId);
 	}
 
 	@Override
 	public void removeEmployeeFromProject(int projectId, int employeeId) {
+		String sql = "delete from project_employee where project_id = ? and employee_id = ?";
+		jdbcTemplate.update(sql, projectId, employeeId);
 	}
 
 	@Override
 	public List<Employee> getEmployeesWithoutProjects() {
-		return new ArrayList<>();
+		List<Employee> employees = new ArrayList<>();
+		String sql = "select * from employee left join project_employee on employee.employee_id = project_employee.employee_id where project_id is null;";
+		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+		while(results.next()){
+			employees.add(mapRowToEmployee(results));
+		}
+		return employees;
 	}
 
-
+	private Employee mapRowToEmployee(SqlRowSet rowSet){
+		Employee employee = new Employee();
+		employee.setId(rowSet.getInt("employee_id"));
+		employee.setDepartmentId(rowSet.getInt("department_id"));
+		employee.setFirstName(rowSet.getString("first_name"));
+		employee.setLastName(rowSet.getString("last_name"));
+		employee.setBirthDate(rowSet.getDate("birth_date").toLocalDate());
+		employee.setHireDate(rowSet.getDate("hire_date").toLocalDate());
+		return employee;
+	}
 }
