@@ -86,3 +86,7 @@ Passcode: XT5a.JXp
 Day 22 Database Design
 https://techelevator.zoom.us/rec/share/K6OSb6kuOhmbUVwub98oy2tghH8yddeLh9b5hUHlUghp4KtCpGr2gvlQoLCR4sO-.4ZWBJsI-sloCGhhT
 Passcode: =.&3mbjN
+
+Day 23 Data Access and DAO
+https://techelevator.zoom.us/rec/share/NXiXwLTPT7y6cVaBxGgvvD0yTYWPSsLMByrZLyArYeZffXWM-iRUffVhgYppU-Qw.Ew57_xPXcucirgcE
+Passcode: jGw9cc?5
