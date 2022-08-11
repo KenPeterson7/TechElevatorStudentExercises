@@ -1,43 +1,58 @@
 Bug 1
 -----
-Test that demonstrates problem:
+Test that demonstrates problem: # 3
+getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
 
 Expected output:
+2, since we are returning a list by employee_id and employee_id 1 has 2 timesheets
 
 Actual output:
+1, since the method contains an if statement
 
 How did you fix this bug?
+Change the IF statement to a WHILE loop
 
 
 Bug 2
 -----
-Test that demonstrates problem:
+Test that demonstrates problem: # 4
+getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
 
 Expected output:
+3, since we are returning a list by project_id and project_id 1 has 3 timesheets
 
 Actual output:
+2, since the method's where condition specified employee_id
 
 How did you fix this bug?
+changed the where condition to WHERE project_id = ?
 
 
 Bug 3
 -----
-Test that demonstrates problem:
+Test that demonstrates problem: # 7
+updated_timesheet_has_expected_values_when_retrieved
 
 Expected output:
+The updated values for timesheet_id 3 are employee_id, project_id, date_worked, hours_worked, billable, and description are equal to the
+retrieved values for all timesheet_id 3
 
 Actual output:
+No value specified for parameter error (billable)
 
 How did you fix this bug?
-
+Added billable = ? to the select statement, and added updatedTimesheet.isBillable() to the jdbcTemplate update method
 
 Bug 4
 -----
 Test that demonstrates problem:
+getBillableHours_returns_correct_total
 
 Expected output:
+0, because the getBillableHours method should not return the hours if the billable boolean is false
 
 Actual output:
+2,  because the method was the method did not account for billable in the Where condition.
 
 How did you fix this bug?
-
+added and billable = true; to the where condition

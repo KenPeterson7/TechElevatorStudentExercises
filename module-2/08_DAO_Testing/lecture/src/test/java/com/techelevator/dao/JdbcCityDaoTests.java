@@ -20,7 +20,8 @@ public class JdbcCityDaoTests extends BaseDaoTests {
     @Before
     public void setup() {
         sut = new JdbcCityDao(dataSource);
-        testCity = new City(0, "Test City", "CC", 99, 999);
+        testCity = new City(0, "Test City", "CC", 99, 999);   //we have to put a placeholder cityId because the
+                                                                                                        // constructor requires it
     }
 
     @Test
@@ -38,18 +39,20 @@ public class JdbcCityDaoTests extends BaseDaoTests {
         Assert.assertNull(city);
     }
 
+    //happy path
     @Test
     public void getCitiesByState_returns_all_cities_for_state() {
-        List<City> cities = sut.getCitiesByState("AA");
-        Assert.assertEquals(2, cities.size());
-        assertCitiesMatch(CITY_1, cities.get(0));
-        assertCitiesMatch(CITY_4, cities.get(1));
+        List<City> cities = sut.getCitiesByState("AA");  //need a list of cities to return ALL cities for a state
+        Assert.assertEquals(2, cities.size());  //chcek if we are getting the right amount of cities back
+        assertCitiesMatch(CITY_1, cities.get(0));  //check to see if i am getting the right cities back
+        assertCitiesMatch(CITY_4, cities.get(1));  //check to see if i am getting the right cities back
 
-        cities = sut.getCitiesByState("BB");
-        Assert.assertEquals(1, cities.size());
-        assertCitiesMatch(CITY_2, cities.get(0));
+        cities = sut.getCitiesByState("BB");  //chcek if we are getting the right amount of cities back
+        Assert.assertEquals(1, cities.size());    //check to see if i am getting the right cities back
+        assertCitiesMatch(CITY_2, cities.get(0));        //check to see if i am getting the right cities back
     }
 
+    //negative path
     @Test
     public void getCitiesByState_returns_empty_list_for_abbreviation_not_in_db() {
         List<City> cities = sut.getCitiesByState("XX");
@@ -58,21 +61,21 @@ public class JdbcCityDaoTests extends BaseDaoTests {
 
     @Test
     public void createCity_returns_city_with_id_and_expected_values() {
-        City createdCity = sut.createCity(testCity);
+        City createdCity = sut.createCity(testCity);   //creating a new city by adding testCity to the DB
 
-        Integer newId = createdCity.getCityId();
-        Assert.assertTrue(newId > 0);
+        Integer newId = createdCity.getCityId();     //get the cityId for the created city and assign that to newId
+        Assert.assertTrue(newId > 0);       //cityId is greater than 0 because we do not pass in the city_id via our createCity method
 
-        testCity.setCityId(newId);
-        assertCitiesMatch(testCity, createdCity);
+        testCity.setCityId(newId);               //setting the newId to the testCity reference variable
+        assertCitiesMatch(testCity, createdCity);    //compare the two tests
     }
 
     @Test
     public void created_city_has_expected_values_when_retrieved() {
-        City createdCity = sut.createCity(testCity);
+        City createdCity = sut.createCity(testCity);   //create a new city with our test city
 
-        Integer newId = createdCity.getCityId();
-        City retrievedCity = sut.getCity(newId);
+        Integer newId = createdCity.getCityId();   //getting the cityId of teh createCity and assign it to newId
+        City retrievedCity = sut.getCity(newId);   //setting the newId
 
         assertCitiesMatch(createdCity, retrievedCity);
     }
@@ -93,7 +96,8 @@ public class JdbcCityDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void deleted_city_cant_be_retrieved() {
+    public void deleted_city_cant_be_retrieved() {  //call the delete method,don't change or pass anything,
+                                                    // then check that it deletes city, so only city 1 is retainted for AA
         sut.deleteCity(4);
 
         City retrievedCity = sut.getCity(4);
