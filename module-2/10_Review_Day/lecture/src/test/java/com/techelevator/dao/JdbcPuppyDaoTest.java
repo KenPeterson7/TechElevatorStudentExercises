@@ -28,7 +28,7 @@ public class JdbcPuppyDaoTest {
 
     @Before
     public void setupData(){
-        String sql = "INSERT INTO puppy (name, weight, gender, breed, paper_trained) VALUES('Rex',15,'M','Doberman',true)";
+        String sql = "INSERT INTO puppy (puppy_name, weight, gender, breed, paper_trained) VALUES('Rex',15,'M','Doberman',true)";
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.update(sql);
         jdbcPuppyDao = new JdbcPuppyDao(dataSource);

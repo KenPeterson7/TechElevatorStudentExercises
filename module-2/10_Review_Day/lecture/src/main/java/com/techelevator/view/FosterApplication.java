@@ -49,7 +49,7 @@ public class FosterApplication
         if (puppy != null) {
             System.out.println(puppy);
         } else {
-            System.out.println("Pupper not found!!");
+            System.out.println("Puppy not found!!");
         }
         Puppy newPuppy = new Puppy("Mr. Toad", 27, "male",
                 "Pug", true);

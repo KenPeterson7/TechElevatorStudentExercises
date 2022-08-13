@@ -1,6 +1,6 @@
 package com.techelevator.model;
 
-public class Puppy {
+public class Puppy {  //pojo class
 
     private int puppyId;
     private String puppyName;
