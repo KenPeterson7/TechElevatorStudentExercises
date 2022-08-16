@@ -106,3 +106,7 @@ Passcode: M+7fkPzY
 Day 27 Networking and HTTP & Consuming RESTful APIs (Part 1)
 https://techelevator.zoom.us/rec/share/8bT0niTMnD1nt5FR7kziuqlcIUtc8qZ0Pbo4qo1LrRoHRtKfdEQvHyUyv9jz-mHk.cYdf-Y9Jj3e6vzR4
 Passcode: XU*n+E4u
+
+Day 28 Consuming APIs
+https://techelevator.zoom.us/rec/share/_mitKaCZB6I1zB1tgztdd2UT_aszPD07luh6wqUBP5d07XMwaleLfyWxBioHUwvQ.s6QirnQxccIGQrhZ
+Passcode: AX3j.611
