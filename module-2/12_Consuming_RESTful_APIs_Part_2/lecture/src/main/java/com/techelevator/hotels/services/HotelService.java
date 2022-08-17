@@ -24,7 +24,6 @@ public class HotelService {
         headers.setContentType(MediaType.APPLICATION_JSON);    //set the content type to JSON
         HttpEntity<Reservation> entity = new HttpEntity<>(newReservation, headers);    //pass in the variable we're testing + the headers to create new Reservation object entity
         Reservation returnedReservation = null;   //declared a reservation
-
         try {   //instantiated reservation variable to the restTemplate postForObject method, passing in the endpoint, our reservation object,
                 // and the Reservation.class for deserialization
             returnedReservation = restTemplate.postForObject(API_BASE_URL + "reservations", entity, Reservation.class);
