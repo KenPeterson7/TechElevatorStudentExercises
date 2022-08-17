@@ -1,6 +1,6 @@
 package com.techelevator.auctions.model;
 
-public class Auction {
+public class Auction {   //POJO
 
     private int id;
     private String title;
