@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component   //tells Spring to inject (instantiate our class with this specific implementation)
 public class MemoryHotelDao implements HotelDao {
 
     private List<Hotel> hotels = new ArrayList<>();

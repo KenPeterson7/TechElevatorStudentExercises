@@ -1,6 +1,7 @@
 package com.techelevator.reservations.controllers;
 
 import com.techelevator.reservations.dao.HotelDao;
+import com.techelevator.reservations.dao.MemoryHotelDao;
 import com.techelevator.reservations.dao.ReservationDao;
 import com.techelevator.reservations.exception.HotelNotFoundException;
 import com.techelevator.reservations.exception.ReservationNotFoundException;
@@ -9,17 +10,20 @@ import com.techelevator.reservations.model.Reservation;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class HotelController {
 
-    private HotelDao hotelDao;
+    private HotelDao hotelDao;   //declare interfaces as private vars (properties of the class)
     private ReservationDao reservationDao;
 
-    public HotelController(HotelDao hotelDao, ReservationDao reservationDao) {
-        this.hotelDao = hotelDao;
+    //create a constructor that takes in those vars and assigns them
+    //then go into the interface and annotate the interface w/ the @Component
+    public HotelController(HotelDao hotelDao, ReservationDao reservationDao) {   //pass in the dependencies (Classes) as params
+        this.hotelDao = hotelDao;     //assign params to properties within the Class
         this.reservationDao = reservationDao;
     }
 
@@ -120,5 +124,16 @@ public class HotelController {
 
         return filteredHotels;
     }
+    @RequestMapping(path = "/reservations/{id}", method = RequestMethod.PUT)
+    public Reservation update(@Valid @RequestBody Reservation reservation, @PathVariable int id) throws ReservationNotFoundException{
+        return reservationDao.update(reservation, id);
+    }
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @RequestMapping(path = "reservations/{id}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable int id) throws ReservationNotFoundException{
+        reservationDao.delete(id);
+    }
+
 
 }
