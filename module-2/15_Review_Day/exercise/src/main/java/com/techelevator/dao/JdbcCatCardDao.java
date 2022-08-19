@@ -17,6 +17,8 @@ public class JdbcCatCardDao implements CatCardDao {
 	private JdbcTemplate jdbcTemplate;
 	private Logger log = LoggerFactory.getLogger(getClass());
 
+	private List<CatCard> catCards = new ArrayList<>();
+
 	public JdbcCatCardDao(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
@@ -69,6 +71,12 @@ public class JdbcCatCardDao implements CatCardDao {
 
 	private boolean exists(long id) {
 		return jdbcTemplate.queryForObject("select * from catcards where id = ?", new Object[]{id}, boolean.class);
+	}
+
+	@Override
+	public CatCard addCat(CatCard catCard, long catCardId){
+		catCards.add(catCard);
+		return catCard;
 	}
 	
 	private CatCard mapRowToCard(SqlRowSet rs) {

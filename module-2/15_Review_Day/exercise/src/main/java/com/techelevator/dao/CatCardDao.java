@@ -16,4 +16,6 @@ public interface CatCardDao {
 
 	boolean delete(long id);
 
+	CatCard addCat(CatCard catCard, long catCardId);
+
 }
