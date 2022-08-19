@@ -37,7 +37,7 @@ public class Module1CodingAssessment {
 
 		//File I/O
 		File file = new File("FlowerInput.csv");
-		List<FlowerShop> flowerShops = new ArrayList<>(); // empty arraylist to hold all fs objects
+		List<FlowerShop>flowerShops = new ArrayList<>(); // empty arraylist to hold all fs objects
 		try {
 			Scanner fileInput = new Scanner(file);
 			System.out.println("File open");
