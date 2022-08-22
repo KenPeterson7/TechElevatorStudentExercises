@@ -12,12 +12,12 @@ public class AuthenticationService {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String login(String username, String password) {
-        CredentialsDto credentialsDto = new CredentialsDto();
-        credentialsDto.setUsername(username);
+        CredentialsDto credentialsDto = new CredentialsDto();   //instantiate new credentialsDto object
+        credentialsDto.setUsername(username);   //set the username and pw
         credentialsDto.setPassword(password);
-        HttpHeaders headers = new HttpHeaders();
+        HttpHeaders headers = new HttpHeaders();  //instantiate the HttpHeaders
         headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<CredentialsDto> entity = new HttpEntity<>(credentialsDto, headers);
+        HttpEntity<CredentialsDto> entity = new HttpEntity<>(credentialsDto, headers);   //instantiate HttpEntity object
         String token = null;
         try {
             ResponseEntity<TokenDto> response = restTemplate.exchange(API_BASE_URL + "login", HttpMethod.POST, entity, TokenDto.class);

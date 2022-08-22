@@ -119,11 +119,11 @@ public class App {
     }
 
     private void handleLogin() {
-        String username = consoleService.promptForString("Username: ");
+        String username = consoleService.promptForString("Username: ");  //using console service to get the username/pw from user
         String password = consoleService.promptForString("Password: ");
-        String token = authenticationService.login(username, password);
+        String token = authenticationService.login(username, password); //calling on authenticationService by passing in the username/pw and storing it in token
         if (token != null) {
-            hotelService.setAuthToken(token);
+            hotelService.setAuthToken(token);    //set the authToken for the hotelService
         } else {
             consoleService.printErrorMessage();
         }
