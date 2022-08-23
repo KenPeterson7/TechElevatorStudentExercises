@@ -4,7 +4,11 @@ import com.techelevator.pokemon.model.Pokemon;
 import com.techelevator.pokemon.model.PokemonDetails;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public class JdbcPokemonDao implements PokemonDao{
     private JdbcTemplate jdbcTemplate;
 
