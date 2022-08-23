@@ -114,3 +114,11 @@ Passcode: AX3j.611
 Day 29 Server Side APIs (Part 1)
 https://techelevator.zoom.us/rec/share/Qqdadz9aDbwxT7PVuquJYN8Wr7f8oAaz6rxQv1trZxseqFtAStnqfVxKJ6dzgcrv.m0WUYk3l8LM8apq3
 Passcode: 3g$1pahQ
+
+Day 30 Review
+https://techelevator.zoom.us/rec/share/Xhgm4szeC1YTzBRv6mkdMw3z7jA7iPXcKm8IPTqiAJhSQy08Tkq4clWlEA20-cYy.PkJKBf67IqWTIS-g
+Passcode: QL.Eh^68
+
+Day 31 Securing APIs
+https://techelevator.zoom.us/rec/share/2jQuk19hamJJBzNtSBU50PEzfoV8q1HUHCFBR9G5JrbJYxp1TOEKPkPvPZrCcro_.GVDW0bG_MCk-zwlW
+Passcode: Ah32rwt!
