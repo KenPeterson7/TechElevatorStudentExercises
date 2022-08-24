@@ -1,11 +1,13 @@
 package com.techelevator.auctions.model;
 
+import jdk.jfr.Name;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 public class Auction {
-
     private int id;
     @NotBlank(message = "The field `title` should not be blank.")
     private String title;
