@@ -1,0 +1,82 @@
+/* reset page styles */
+html{
+    height: 100%;
+    font-size: 16px;
+}
+
+body{
+    /* changing the default page font */
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom, #858c90, #bbb);
+
+}
+
+div.trello-list{
+    /* create a multi-column layout */
+    display: inline-block;
+    /* fix width of the columns */
+    width: 300px;
+
+    background-color: #ddd;
+    /* 2px will be upper left and bottom right */
+    /* 3px will be upper right and bottom left */
+    border-radius: 2px 3px;
+    vertical-align: top;
+}
+
+header > h1, 
+header > p{
+    /* make elements appear next side by side */
+    display: inline-block;
+/* change font color to slight off-white */
+    color: rgba(255, 255, 255, 0.8);
+/* add line on the right side */
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    padding-inline: 10px;
+    
+}
+
+header > h1{
+    text-transform: capitalize;
+}
+div.trello-list > h2 {
+    margin: 10px;
+}
+
+div.trello-list ol {
+    margin: 0;
+    padding: 0;
+}
+div.trello-list li.card {
+    /* remove the number formatting from each card */
+    list-style: none;
+    /* set the background color  */
+    background-color: rgb(255, 255, 255);
+
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.labels span{
+    display: inline-block;
+    height: 10px;
+    width: 35px;
+    border-radius: 3px;
+    vertical-align: top;
+}
+
+.label.general{
+    background-color: orange;
+}
+
+.label.pathway{
+    background-color: red;
+}
+
+.label.individual{
+    background-color: green;
+}
+
+.label.pair{
+    background-color: teal;
+}
