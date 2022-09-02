@@ -40,4 +40,19 @@ a:hover {
 
 .my-account img {
   width: 40px;
+  
 }
+
+nav,
+nav ul,
+nav ul li, 
+header{
+  display : flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.spacer{
+  flex-grow: 1;
+}
+

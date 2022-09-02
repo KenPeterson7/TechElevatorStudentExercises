@@ -1,6 +1,7 @@
 body {
   margin: 20px;
   padding: 0
+  
 }
 
 header {
@@ -36,4 +37,9 @@ a:visited {
 a:hover {
   color: #00AFEF;
   text-decoration: underline;
+}
+
+nav ul,
+nav ul li {
+  display: flex;
 }
