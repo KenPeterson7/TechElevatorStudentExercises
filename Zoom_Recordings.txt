@@ -127,5 +127,16 @@ Day 32 Review
 https://techelevator.zoom.us/rec/share/WG7KD36TAEtQZPGEXkt010iT34R5vNXZtaiHjQuSNpUDvcJTUwodMyCTjX3TRtQy.44crGQyg07OA1Ksc
 Passcode: $1Zw6z42
 
-Day ?? CSS Selectors
+Day 33 Intro to HTML and CSS
+https://techelevator.zoom.us/rec/share/S2iTdFcoRFQHPACQAm4aJ72u-F2JH4Jy5vbDzHC1edsllmG3JFMIAy0_U7E0spnV.eRi6TJdv4EON0GmH
+Passcode: 9$BMUzSx
+
+Day 34 CSS Selectors
 https://techelevator.zoom.us/rec/share/oeOr4bgDtq5KYDcDKWTH4ushQk5JE3HW74yyHqnlaiWE-fvryfDABARMgRJ0wbA._dPWr_73d36TMqy6
+
+Day 35 CSS Grid
+https://drive.google.com/file/d/1jAI9jZTmK6lVgKLI1-nR4qCf7WrSSExZ/view?usp=sharing
+
+Day 36 Flexbox
+https://techelevator.zoom.us/rec/share/4MLl7ckJhCbiuGX_yvcRovc0mO36j6X6SxO9SnZcylGLiT6MjYgXgYZ8kE5q_OH2.kg8U6W-fJkZWljO_
+Passcode: 7=Affpz!
