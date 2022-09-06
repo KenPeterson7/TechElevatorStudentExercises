@@ -40,8 +40,7 @@
 		function lastDigit(x, y){
 			x = x.toString();
 			y = y.toString();
-			let a = x.substring(x.length -1);
-			if(x.substring(x.length -1) == a && y.substring(y.length -1) == a){
+			if(x.substring(x.length -1) == y.substring(y.length -1)){
 				return true;
 			} else
 			return false;
