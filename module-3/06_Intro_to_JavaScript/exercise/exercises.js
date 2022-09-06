@@ -218,3 +218,19 @@ firstName, lastName, and age. Populate the properties with your values.
 		}
 		return ken
 	}
+
+
+	/**
+	 * Takes two numbers and returns the product of those two numbers.
+	 * 
+	 * Will return NaN if exactly two numbers are not given.
+	 * 
+	 * @param {number} multiplicand a number to multiply
+	 * @param {number} multiplier a number to multiple by
+	 * @returns {number} product of the two params
+	 */
+	function multiplyBy(multiplicand, multiplier) {
+		let result = multiplicand * multiplier;
+	
+		return result;
+	}

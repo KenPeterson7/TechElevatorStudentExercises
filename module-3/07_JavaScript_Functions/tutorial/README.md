@@ -1,4 +1,4 @@
-# Tutorial for JavaScript Functions
+6# Tutorial for JavaScript Functions
 
 In this tutorial, you'll practice writing some JavaScript functions. These are a lot like the methods you wrote in C# or Java, but they're different in some very subtle ways. You'll also practice documenting your functions so other developers know what's going on and how to use them.
 
