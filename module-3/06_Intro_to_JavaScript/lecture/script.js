@@ -10,8 +10,14 @@
  */
 function variables() {
   // Declares a variable where the value cannot be changed
-  // Declares a variable those value can be changed
+  const testNumber = 10;
+  console.log(`The value of testNumber is ${testNumber}`)
+  // Declares a variable whose value can be changed
+  let testString = 'This is only a test string.';
+  console.log(`The value of testString is ${testString}`)
   // Declares a variable that will always be an array
+  const arrayTest = ['Buick', 'Benz', 'Beemer', 'Bentley'];
+  console.log(`The value of arrayTest is ${arrayTest}`)
 }
 
 /**
@@ -74,10 +80,18 @@ function objects() {
   };
 
   // Log the object
+  console.log(person);
 
   // Log the first and last name
 
+  console.log(person.firstName);
+  console.log(person.lastName);
   // Log each employee
+  console.log(person.employees);
+
+  for(let i=0; i < person.employees.length; i++){
+    console.log(person.employees[i]);
+  }
 }
 
 /*
@@ -128,6 +142,14 @@ function stringFunctions(value) {
   console.log(`.endsWith('World') - ${value.endsWith("World")}`);
   console.log(`.startsWith('Hello') - ${value.startsWith("Hello")}`);
   console.log(`.indexOf('Hello') - ${value.indexOf("Hello")}`);
+  const splitStrings = value.split(',');
+  for(let i = 0; i < splitStrings.length; i++){
+    console.log(splitStrings[i]);
+  }
+  console.log(`.split -  ${splitStrings[2]}`)
+  console.log(value);
+  console.log(`.substr - ${value.substring(0,4)}`);
+  console.log(`.substring - ${value.substring(6,13)}`);
 
   /*
     Other Methods
