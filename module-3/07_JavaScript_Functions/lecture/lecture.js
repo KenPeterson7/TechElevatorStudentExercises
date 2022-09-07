@@ -28,6 +28,10 @@ function printToConsole(value) {
  * @param {number} secondParameter the second parameter to multiply
  */
 
+function multiplyTogether(firstParameter, secondParameter){
+  return firstParameter * secondParameter;
+}
+
 /**
  * This version makes sure that no parameters are ever missing. If
  * someone calls this function without parameters, we default the
@@ -39,6 +43,9 @@ function printToConsole(value) {
  * @param {number} [secondParameter=0] the second parameter to multiply
  */
 
+ function multiplyNoUndefined(firstParameter = 1, secondParameter = 1){
+  return firstParameter * secondParameter;
+}
 
  
 /**
@@ -51,8 +58,8 @@ function printToConsole(value) {
  * @param {number} firstParameter the first parameter
  * @param {number} secondParameter the second parameter
  */
-function returnBeforeEnd(firstParameter, secondParameter) {
-  console.log("This will always fire.");
+function returnBeforeEnd(firstParameter, secondParameter) {  //take in params
+  console.log("This will always fire.");    //log some text
 
   if (firstParameter == 0) {
     console.log("Returning secondParameter times two.");
@@ -79,6 +86,7 @@ function scopeTest() {
     // this variable lives inside this block and doesn't
     // exist outside of the block
     let scopedToBlock = inScopeInScopeTest;
+    console.log("This won't print!");
   }
 
   // scopedToBlock doesn't exist here so an error will be thrown
@@ -100,7 +108,7 @@ function createSentenceFromUser(name, age, listOfQuirks = [], separator = ', ') 
  * @returns {number} sum of all the numbers
  */
 function sumAllNumbers(numbersToSum) {
-  return numbersToSum.reduce();
+  return numbersToSum.reduce((previousValue, currentValue) => previousValue + currentValue);
 }
 
 /**
@@ -111,4 +119,12 @@ function sumAllNumbers(numbersToSum) {
  * @returns {number[]} a new array with only those numbers that are
  *   multiples of 3
  */
-function allDivisibleByThree(numbersToFilter) {}
+function allDivisibleByThree(numbersToFilter) {
+  return numbersToFilter.filter(
+    (value) => {
+      return value % 3 == 0;
+    }
+  )
+
+  // return numbersToFilter.filter(x => x%3 == 0)
+}
