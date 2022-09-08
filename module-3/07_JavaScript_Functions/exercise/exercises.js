@@ -119,8 +119,7 @@ function makeHappy(testArray){
  */
     function getFullAddressesOfProperties(arr){
         const test = arr.map(keys => keys.streetNumber + ' ' + keys.streetName +
-        ' ' + keys.streetType + ' ' + keys.city + ' ' + keys.state + ' ' +
-        keys.zip);
+        ' ' + keys.streetType + ' ' + keys.city + ' ' + keys.state + ' ' + keys.zip);
          return test;
     }
 /** 
