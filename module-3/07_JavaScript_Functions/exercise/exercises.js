@@ -71,11 +71,15 @@ function makeNumber(first, second = ''){
  */
 
     function addAll(){
-        let sum = 0;
-        for(let i = 0; i < arguments.length; i++){
-            sum += arguments[i];
-        }
-        return sum;
+
+        return Array.from(arguments).reduce((sum, num) => sum+num, 0);
+
+
+        // let sum = 0;
+        // for(let i = 0; i < arguments.length; i++){
+        //     sum += arguments[i];
+        // }
+        // return sum;
     }
   //test 
 /*
@@ -109,18 +113,23 @@ function makeHappy(testArray){
 
 /**
  * 
- * @param {number} streetNumber to input
- * @param {string} streetName to input
-   @param {string} streetType to input
-   @param {string} city to input
-   @param {string} state  to input 
-   @param {number} zip to input
+ * @param {object[]} arr an array of objects to format
+ * @param {number|string} arr[].streetNumber to input
+ * @param {number|string} arr[].streetName to input
+   @param {number|string} arr[].streetType to input
+   @param {number|string} arr[].city to input
+   @param {number|string} arr[].state  to input 
+   @param {number|string} arr[].zip to input
  * @returns {string[]} string array
  */
     function getFullAddressesOfProperties(arr){
-        const test = arr.map(keys => keys.streetNumber + ' ' + keys.streetName +
-        ' ' + keys.streetType + ' ' + keys.city + ' ' + keys.state + ' ' + keys.zip);
-         return test;
+        const test2 = arr.map(x =>[x.streetNumber, x.streetName, x.streetType,
+        x.city, x.state, x.zip].join(' '));
+        // const test = arr.map(keys => keys.streetNumber + ' ' + keys.streetName +
+        // ' ' + keys.streetType + ' ' + keys.city + ' ' + keys.state + ' ' + keys.zip);
+        //  return test;
+
+        return test2;
     }
 /** 
  * Write and document a function called findLargest that uses `forEach`
