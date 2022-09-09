@@ -24,7 +24,7 @@ function displayGroceries() {
     const container = document.createElement('li')  //create a new li, store it in a constant called container
     container.setAttribute('class', 'grocery')  //set the class of each li to grocery
     container.innerText += grocery;  //update the text (value) of each li to the current element (value) in the array
-    ul.insertAdjacentElement('afterbegin', container) //adds new elements to the DOM
+    ul.insertAdjacentElement('afterbegin', container) //adds new Dom Nodes to the beginning of the li
     //afterbegin adds new DOM nodes to the beginning of the list (last item is first, first item is last)
     //beforeend adds new DOM nodes to the end of the list ( first item is first, last item is last)
   })
