@@ -71,10 +71,7 @@ function makeNumber(first, second = ''){
  */
 
     function addAll(){
-
         return Array.from(arguments).reduce((sum, num) => sum+num, 0);
-
-
         // let sum = 0;
         // for(let i = 0; i < arguments.length; i++){
         //     sum += arguments[i];
