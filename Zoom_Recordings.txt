@@ -148,3 +148,7 @@ Passcode: Dj#i=Cw7
 Day 38 Javascript Functions
 https://techelevator.zoom.us/rec/share/2nDXKyBZ_6xr8j79vZgY0BCfUACxCPF8BJZxn_JXr6zMqGSPfShL8JZ9x8GVo7d_.b-tCwbc35VDe-soS
 Passcode: Cd6E+g.B
+
+Day 39 DOM
+https://techelevator.zoom.us/rec/share/A_NepQS3_FZNJ9TWavl7Y4oEOJRBwxjzLIj2bNL5brh12mh0MHALS-zXjLF7HYPV.Icaqv3po5K5EHLeF
+Passcode: JCQ&$xP5
