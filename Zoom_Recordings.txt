@@ -152,3 +152,7 @@ Passcode: Cd6E+g.B
 Day 39 DOM
 https://techelevator.zoom.us/rec/share/A_NepQS3_FZNJ9TWavl7Y4oEOJRBwxjzLIj2bNL5brh12mh0MHALS-zXjLF7HYPV.Icaqv3po5K5EHLeF
 Passcode: JCQ&$xP5
+
+Day 40 Event Handling
+https://techelevator.zoom.us/rec/share/HfyEQkqUxFjXk4uVKp_fd7g8luvJhWrhhgtejXXDD6UAFbjWPMzOqTxgdtNp-yMj.76n1R17M2Lp_yCzG
+Passcode: !z9#qSiV
