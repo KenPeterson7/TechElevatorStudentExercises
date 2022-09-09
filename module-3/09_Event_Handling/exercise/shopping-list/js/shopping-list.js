@@ -36,3 +36,44 @@ function displayGroceries() {
     ul.appendChild(li);
   });
 }
+
+document.addEventListener('DOMContentLoaded', () =>{
+  setPageTitle()
+  displayGroceries()
+
+  const tests = document.querySelectorAll('li')
+  
+  tests.forEach((test) => {
+    test.addEventListener('click', () => {
+      if(!test.classList.contains('completed')) {
+        test.classList.add('completed')
+        test.querySelector('i').classList.add('completed')
+      }
+    })
+    test.addEventListener('dblclick', () => {
+      if(test.classList.contains('completed')) {
+        test.classList.remove('completed')
+        test.querySelector('i').classList.remove('completed')
+      }
+    })
+  })
+
+  const markAllComplete = document.getElementById('toggleAll')
+  markAllComplete.addEventListener('click', () => {
+    if(allItemsIncomplete){
+      tests.forEach((test) => {
+        test.classList.add('completed')
+        test.querySelector('i').classList.add('completed')
+      })
+      markAllComplete.innerText = 'Mark All Incomplete'
+    } else {
+      tests.forEach((test) => {
+        test.classList.remove('completed')
+        test.querySelector('i').classList.remove('completed')
+      })
+      markAllComplete.innerText = 'Mark All Complete'
+    }
+    allItemsIncomplete = !allItemsIncomplete
+    }
+      )
+})

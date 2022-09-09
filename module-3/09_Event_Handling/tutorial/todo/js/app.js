@@ -50,6 +50,7 @@ tasks.forEach((task) => {
   task.addEventListener('click', () => {
     if (!task.classList.contains('completed')) {
       task.classList.add('completed');
+      //i stands for icon and li stands for line item
       task.querySelector('i').classList.add('completed');
     }
   });
