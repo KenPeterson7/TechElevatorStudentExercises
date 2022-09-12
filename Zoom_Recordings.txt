@@ -39,120 +39,124 @@ Day 9 Classes and Encapsulation
 https://techelevator.zoom.us/rec/share/EdBgqtDZIIvwWUE-dxF-_fwaV5qLd1ukc0ZGCbZ3WzFam3KCzpO7WkTL9jkoej1Z.qDBx-9SWzwsEAqhd
 Passcode: *%07JQ%g
 
-Day 11 Inheritance
+Day 10 Inheritance
 https://techelevator.zoom.us/rec/share/BzMDLRUyufdLeH43Kgn9xL2xrBDe-MI3X_BmvT84-kpphYcgQf0EI_WWMTAsF2p8.MWj_9p6ISUI-ou5P
 Passcode: Ed54qq%$
 
-Day 12 Polymorphism
+Day 11 Polymorphism
 https://techelevator.zoom.us/rec/share/66KZCWgl_ZzxMEK0c5gB1VEo3LBUlCK9OQHpoERdaOXjE6T75_dRmZegoxXHjqnL.CY6kaqMfPes5dGgu
 Passcode: mc9QHA=*
 
-Day 13 Managing Inheritance
+Day 12 Managing Inheritance
 https://techelevator.zoom.us/rec/share/iEyc4OAqIAvTROsnrUW8lbdgiTwUoE4jowNbZlkgVuzu7WjNeUOeNuw1BwLtGtG4.pVlk4uVcpsQOQL38
 Passcode: 00LNVs@1
 
-Day 14 Unit Testing
+Day 13 Unit Testing
 https://techelevator.zoom.us/rec/share/6d3SCqcjHz60o2v58Ux6hVuBMwhctkoRRJu4zCaNb8b-uIk0n92uT0rU14UIAHdr.EaBwIuQE2yr7T0_P
 Passcode: w6*v74AV
 
-Day 15 Review
+Day 14 Review
 https://techelevator.zoom.us/rec/share/xMkybXi37pfzeFlKq_ajbyHsYjErL4GvOvZvEE0Cuh7-7c_UoEJZ32mXgUO3T_dQ.BhY2ORarmz6lmFVJ
 Passcode: 5!Pf3=50
 
-Day 16 Exception handling & File I/O
+Day 15 Exception handling & File I/O
 https://techelevator.zoom.us/rec/share/FPTkcwnjCZerjSNXAYKz6t4tAnhuYk0MskZKwefCg5s6oTPLT1aOMKYEvYobku8V.7QTriKWKuKSm3xKX
 Passcode: ?BDjg#2Z
 
-Day 17 File Writing
+Day 16 File Writing
 https://techelevator.zoom.us/rec/share/Ad231nrET8I-wTpVlQBQXXrhrAjhZv7rLy0WPHu1URs6HzeR7wRYf5YMGvs9ybnO.hGsi31WiB1KDAabh
 Passcode: pM4004P*
 
-Day 18 Intro to Databases
+Day 17 Intro to Databases
 https://techelevator.zoom.us/rec/share/OzL6VDee77wP645YZRKwCD_xSRkaAepbVAVK_nZ6jMlYJ6Cwjv83brVoW6ynhL0E.tosSQb2y8W_fnlCz
 Passcode: uI@i7=8z
 
-Day 19 Ordering Limiting and Grouping
+Day 18 Ordering Limiting and Grouping
 https://techelevator.zoom.us/rec/share/GlWqINJj7XdS-XptJIQkPC3tKOUTEBNTxmHOBxU5TOUB5p6ZRUR8HGITySc88ZpE.CzJJ5Ba60WiNnUbm
 Passcode: 0Gd&H8M&
 
-Day 20 Insert, Update, and Delete
+Day 19 Insert, Update, and Delete
 https://techelevator.zoom.us/rec/share/Ry5DF2LSV3XgN98_n1-A1A_nYQaStDGDyF0rkHV9rUDPRWmcp94JIk9sLTd1SjmQ.vFHsEkHvUqaD_X7n
 Passcode: iCZ%Q8aR
 
-Day 21 Review
+Day 20 Review
 https://techelevator.zoom.us/rec/share/gdq2ibHwdXFabKGE1BHktESEVR2jiGBVcp4J6Kb0dVE8_yZ8tyCRp4IR-3c5nXQ.LIu67MG-aTq09WDW
 Passcode: XT5a.JXp
 
-Day 22 Database Design
+Day 21 Database Design
 https://techelevator.zoom.us/rec/share/K6OSb6kuOhmbUVwub98oy2tghH8yddeLh9b5hUHlUghp4KtCpGr2gvlQoLCR4sO-.4ZWBJsI-sloCGhhT
 Passcode: =.&3mbjN
 
-Day 23 Data Access and DAO
+Day 22 Data Access and DAO
 https://techelevator.zoom.us/rec/share/NXiXwLTPT7y6cVaBxGgvvD0yTYWPSsLMByrZLyArYeZffXWM-iRUffVhgYppU-Qw.Ew57_xPXcucirgcE
 Passcode: jGw9cc?5
 
-Day 24 Data Security
+Day 23 Data Security
 https://www.ross-simons.com/c.-1970-vintage-18kt-yellow-gold-double-ram-head-bypass-bangle-bracelet-with-multicolored-enamel-966908.html?sku=JECX%20966908%20070%208Y&utm_source=facebook&utm_medium=social&utm_campaign=Retargeting%20-%20Estate%20Jewelry%20-%207C1V&utm_content=Dynamic%20Retargeting%20Carousel%20-%20Affirm%2BFreeShip&utm_audience=Viewers%2FATC%2030%20Days&fbclid=IwAR3t-sDtmN5o1hWTOE5F950G-J7uMusBtcNGWLz9h5njSsCbkO89xHEtS60
 6bw@LwsB
 
-Day 25 DAO Testing
+Day 24 DAO Testing
 https://techelevator.zoom.us/rec/share/EpnhLIulXqJMrXNCjp4m3O8mDKSpDC1oQd1n6ED2rzMICcWPrzT2cngGRgxWY-5i.Cw72ZWPOYnA3JQ7G
 Passcode: 19r%4Vah
 
-Day 26 Review
+Day 25 Review
 https://techelevator.zoom.us/rec/share/OLJFXrgCllBLiI6M4pvO6j-bNECkFzkn9TRMGArPn4knk632FCJfSULFNXbqrbpQ.iBwGbPfjHLH3pDba
 Passcode: M+7fkPzY
 
-Day 27 Networking and HTTP & Consuming RESTful APIs (Part 1)
+Day 26 Networking and HTTP & Consuming RESTful APIs (Part 1)
 https://techelevator.zoom.us/rec/share/8bT0niTMnD1nt5FR7kziuqlcIUtc8qZ0Pbo4qo1LrRoHRtKfdEQvHyUyv9jz-mHk.cYdf-Y9Jj3e6vzR4
 Passcode: XU*n+E4u
 
-Day 28 Consuming APIs (Part 2)
+Day 27 Consuming APIs (Part 2)
 https://techelevator.zoom.us/rec/share/_mitKaCZB6I1zB1tgztdd2UT_aszPD07luh6wqUBP5d07XMwaleLfyWxBioHUwvQ.s6QirnQxccIGQrhZ
 Passcode: AX3j.611
 
-Day 29 Server Side APIs (Part 1)
+Day 28 Server Side APIs (Part 1)
 https://techelevator.zoom.us/rec/share/Qqdadz9aDbwxT7PVuquJYN8Wr7f8oAaz6rxQv1trZxseqFtAStnqfVxKJ6dzgcrv.m0WUYk3l8LM8apq3
 Passcode: 3g$1pahQ
 
-Day 30 Review
+Day 29 Review
 https://techelevator.zoom.us/rec/share/Xhgm4szeC1YTzBRv6mkdMw3z7jA7iPXcKm8IPTqiAJhSQy08Tkq4clWlEA20-cYy.PkJKBf67IqWTIS-g
 Passcode: QL.Eh^68
 
-Day 31 Securing APIs
+Day 30 Securing APIs
 https://techelevator.zoom.us/rec/share/2jQuk19hamJJBzNtSBU50PEzfoV8q1HUHCFBR9G5JrbJYxp1TOEKPkPvPZrCcro_.GVDW0bG_MCk-zwlW
 Passcode: Ah32rwt!
 
-Day 32 Review
+Day 31 Review
 https://techelevator.zoom.us/rec/share/WG7KD36TAEtQZPGEXkt010iT34R5vNXZtaiHjQuSNpUDvcJTUwodMyCTjX3TRtQy.44crGQyg07OA1Ksc
 Passcode: $1Zw6z42
 
-Day 33 Intro to HTML and CSS
+Day 32 Intro to HTML and CSS
 https://techelevator.zoom.us/rec/share/S2iTdFcoRFQHPACQAm4aJ72u-F2JH4Jy5vbDzHC1edsllmG3JFMIAy0_U7E0spnV.eRi6TJdv4EON0GmH
 Passcode: 9$BMUzSx
 
-Day 34 CSS Selectors
+Day 33 CSS Selectors
 https://techelevator.zoom.us/rec/share/oeOr4bgDtq5KYDcDKWTH4ushQk5JE3HW74yyHqnlaiWE-fvryfDABARMgRJ0wbA._dPWr_73d36TMqy6
 
-Day 35 CSS Grid
+Day 34 CSS Grid
 https://drive.google.com/file/d/1jAI9jZTmK6lVgKLI1-nR4qCf7WrSSExZ/view?usp=sharing
 
-Day 36 Flexbox
+Day 35 Flexbox
 https://techelevator.zoom.us/rec/share/4MLl7ckJhCbiuGX_yvcRovc0mO36j6X6SxO9SnZcylGLiT6MjYgXgYZ8kE5q_OH2.kg8U6W-fJkZWljO_
 Passcode: 7=Affpz!
 
-Day 37 Intro to Javascript
+Day 36 Intro to Javascript
 https://techelevator.zoom.us/rec/share/88gJbHBBQQrPmjMuVpVUQo1SMZWGDpYZ7ah7GyJOlj5ThL4SA9RrGF5z5UxpdEKA.B_-nPVBGw-EDk96s
 Passcode: Dj#i=Cw7
 
-Day 38 Javascript Functions
+Day 37 Javascript Functions
 https://techelevator.zoom.us/rec/share/2nDXKyBZ_6xr8j79vZgY0BCfUACxCPF8BJZxn_JXr6zMqGSPfShL8JZ9x8GVo7d_.b-tCwbc35VDe-soS
 Passcode: Cd6E+g.B
 
-Day 39 DOM
+Day 38 DOM
 https://techelevator.zoom.us/rec/share/A_NepQS3_FZNJ9TWavl7Y4oEOJRBwxjzLIj2bNL5brh12mh0MHALS-zXjLF7HYPV.Icaqv3po5K5EHLeF
 Passcode: JCQ&$xP5
 
-Day 40 Event Handling
+Day 39 Event Handling
 https://techelevator.zoom.us/rec/share/HfyEQkqUxFjXk4uVKp_fd7g8luvJhWrhhgtejXXDD6UAFbjWPMzOqTxgdtNp-yMj.76n1R17M2Lp_yCzG
 Passcode: !z9#qSiV
+
+Day 40 Intro to Vue
+https://techelevator.zoom.us/rec/share/iTcS6HFhkTMPYy6XccRiIGY6z1pRAdKNmDvqeCRPoNJkMysW40vyZ_07VXE7stmE._QjNkBMr33dw_qoN
+Passcode: EU81%o2G
