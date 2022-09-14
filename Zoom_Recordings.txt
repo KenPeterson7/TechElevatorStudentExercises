@@ -160,3 +160,7 @@ Passcode: !z9#qSiV
 Day 40 Intro to Vue
 https://techelevator.zoom.us/rec/share/iTcS6HFhkTMPYy6XccRiIGY6z1pRAdKNmDvqeCRPoNJkMysW40vyZ_07VXE7stmE._QjNkBMr33dw_qoN
 Passcode: EU81%o2G
+
+Day 41 Vue Event Handling
+https://techelevator.zoom.us/rec/share/lPv-EK8uEVDCKvX9eo2yycg_0DnVvPMmz4GuuhquklqRvqveYCK8xO5ZuHZbNuB7.ZU7p3cPE4S9mQyeB
+Passcode: +.cp%5mj
