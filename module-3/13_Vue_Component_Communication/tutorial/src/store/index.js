@@ -21,5 +21,8 @@ export default new Vuex.Store({
       state.todos.push(todo);
     }
   },
+  FLIP_DONE(state, todo) {
+    todo.done = ! todo.done;
+  }
 },
 )
