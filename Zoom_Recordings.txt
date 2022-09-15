@@ -164,3 +164,7 @@ Passcode: EU81%o2G
 Day 41 Vue Event Handling
 https://techelevator.zoom.us/rec/share/lPv-EK8uEVDCKvX9eo2yycg_0DnVvPMmz4GuuhquklqRvqveYCK8xO5ZuHZbNuB7.ZU7p3cPE4S9mQyeB
 Passcode: +.cp%5mj
+
+Day 42 Vue Component Communication
+https://techelevator.zoom.us/rec/share/uvMjCwWeBcrRg8WofHwkc0JFsCaX8mcv01JBoHetm1d_AUPmU55XlLraKeyf9WvE.XToRr5Zb4dyT--k-
+Passcode: !0S5@UBy
