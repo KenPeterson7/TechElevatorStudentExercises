@@ -10,7 +10,7 @@
         <label for="isbn">ISBN</label>
         <input v-model="newBook.isbn" type="text" id="isbn" class="isbn-input">
 
-        <button type="submit">Add Book</button>
+        <button type="submit" value="submit">Submit</button>
     </form>
   </div>
 </template>
