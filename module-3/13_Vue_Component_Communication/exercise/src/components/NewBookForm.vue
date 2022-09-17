@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="addBook" action="" class="new-book-form">
+    <form v-on:submit.prevent="addBook" class="new-book-form">
         <label for="title">Title</label>
         <input v-model="newBook.title" id="title" type="text" class="title-input">
 
@@ -10,7 +10,7 @@
         <label for="isbn">ISBN</label>
         <input v-model="newBook.isbn" type="text" id="isbn" class="isbn-input">
 
-        <button type="submit" value="submit">Submit</button>
+        <button type="submit" value="Save">Test</button>
     </form>
   </div>
 </template>
@@ -30,7 +30,6 @@ export default {
     methods: {
         clear() {
             this.newBook = {
-                name: 'new-book-form',
                 title: '',
                 author: '',
                 read: false,
@@ -38,10 +37,8 @@ export default {
             }       
         },
         addBook() {
-            if (Object.values(this.newBook).every(field => field !== '')) {
                 this.$store.commit('ADD_BOOK', this.newBook);
-            }
-            this.clear();    
+                this.clear();    
         }      
     }
 }
