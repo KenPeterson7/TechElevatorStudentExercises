@@ -10,7 +10,7 @@
         <label for="isbn">ISBN</label>
         <input v-model="newBook.isbn" type="text" id="isbn" class="isbn-input">
 
-        <button type="submit" value="Save">Test</button>
+        <button type="submit" value="Submit">Test</button>
     </form>
   </div>
 </template>
@@ -38,7 +38,13 @@ export default {
         },
         addBook() {
                 this.$store.commit('ADD_BOOK', this.newBook);
-                this.clear();    
+                this.clear()
+            //     this.newBook = {
+            //     title: '',
+            //     author: '',
+            //     read: false,
+            //     isbn: ''
+            // }   
         }      
     }
 }
