@@ -1,5 +1,6 @@
 <template>
-    <div> {{book.title}}
+    <div> 
+        {{book.title}}
         {{book.author}}
         {{book.isbn}}
     </div>
