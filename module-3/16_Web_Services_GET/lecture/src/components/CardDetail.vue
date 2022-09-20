@@ -1,9 +1,38 @@
 <template>
-  <div></div>
+  <div>
+    <h1> {{card.title}}</h1>
+    <p> {{card.description}}</p>
+    <div class="loading" v-if="isLoading">
+      <img src="../assets/ping_pong_loader.gif" />
+    </div>
+    <comments-list v-bind:comments="card.comments"/>
+  </div>
 </template>
 
 <script>
+import boardsService from '../services/BoardService';
+import CommentsList from '@/components/CommentsList';
+
 export default {
-  name: "card-detail"
+  name: "card-detail",
+  components: {
+    CommentsList
+  },
+  data(){
+    return {
+      card: {
+        title: '',
+        description: '',
+        status: '',
+        comments: []
+      }
+    }
+  },
+  created(){
+    boardsService.getCard(this.$route.params.boardID, this.$routes.params.cardID)
+    .then(response => {
+      this.card = response
+    })
+  }
 };
 </script>
