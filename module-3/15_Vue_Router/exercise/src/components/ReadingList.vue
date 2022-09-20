@@ -1,6 +1,6 @@
 <template>
   <div class="book-container">
-    <router-link v-bind:to="'/book/' + book.isbn" v-for="book in $store.state.books" v-bind:key="book.isbn">
+    <router-link v-bind:to="'/book/' + book.isbn" v-for="book in $store.state.books" v-bind:key="book.isbn"></router-link>
     <book-card v-bind:book="book"  />
   </div>
 </template>
