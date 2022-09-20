@@ -168,3 +168,7 @@ Passcode: +.cp%5mj
 Day 42 Vue Component Communication
 https://techelevator.zoom.us/rec/share/uvMjCwWeBcrRg8WofHwkc0JFsCaX8mcv01JBoHetm1d_AUPmU55XlLraKeyf9WvE.XToRr5Zb4dyT--k-
 Passcode: !0S5@UBy
+
+Day 43 Web Services GET
+https://techelevator.zoom.us/rec/share/8ULNjKdIaourfyiGZOhdsp7_4eG8-rJ3vekcnxvNpgXhBh9iIf8d-nS2-DSBObvE.jeDCD-MLNFJVdImw
+Passcode: 89HU$1k?
