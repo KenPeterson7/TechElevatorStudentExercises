@@ -62,7 +62,7 @@ export default {
         status: this.card.status,
         tag: this.card.tag,
         avatar: "https://randomuser.me/api/portraits/lego/1.jpg",
-        date: moment().format("MMM Do YYYY")
+        date: moment().toISOString()
       };
 
       if (this.cardID === 0) {

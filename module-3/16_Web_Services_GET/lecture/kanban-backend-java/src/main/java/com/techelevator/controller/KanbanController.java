@@ -75,7 +75,6 @@ public class KanbanController {
     }
 
     @DeleteMapping("/boards/{id}")
-    @PreAuthorize("isAuthenticated()")
     public void deleteBoard(@PathVariable long id) {
         if (!kanbanDAO.deleteBoard(id)) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Board not found to delete.");

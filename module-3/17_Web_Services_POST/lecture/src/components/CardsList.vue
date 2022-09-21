@@ -69,7 +69,22 @@ export default {
         });
     },
     deleteBoard() {
-      
+      if(confirm("Are you sure you want to delete this board and all associated cards. This action cannot be undone."))
+        boardsService.deleteBoard(this.boardId).then(response => {
+            if(response.status === 200){
+              alert("Board successfully deleted")
+              this.$store.commit("DELETE_BOARD", this.boardId)
+              this.$router.push({name: 'Home'})
+            }
+        }).catch(error => {
+              if(error.response){
+            this.errorMsg = "Error deleting new board. Response received was " + error.response.statusText + "."
+          } else if(error.request){
+            this.errorMsg = "Error deleting new board. Server could not be created."
+          } else {
+            this.errorMsg = "Error deleting new board. Request could not be created."
+          }
+        })
     }
   },
   created() {

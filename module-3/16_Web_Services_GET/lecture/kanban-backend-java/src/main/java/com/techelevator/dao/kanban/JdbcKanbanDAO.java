@@ -119,10 +119,6 @@ public class JdbcKanbanDAO implements KanbanDAO {
         Long newId = jdbcTemplate.queryForObject(sql, Long.class, board.getTitle(), board.getBackgroundColor());
         board.setId(newId);
 
-        for (Card card : board.getCards()) {
-            card = createCard(board.getId(), card);
-        }
-
         return board;
     }
 
@@ -144,10 +140,6 @@ public class JdbcKanbanDAO implements KanbanDAO {
         Long newId = jdbcTemplate.queryForObject(sql, Long.class, boardId, card.getTitle(), card.getDescription(),
                 card.getAvatar(), card.getDate(), card.getStatus(), card.getTag());
         card.setId(newId);
-
-        for (Comment comment : card.getComments()) {
-            comment = createComment(card.getId(), comment);
-        }
 
         return card;
     }
