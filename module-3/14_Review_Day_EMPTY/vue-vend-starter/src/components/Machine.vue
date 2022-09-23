@@ -1,4 +1,11 @@
 <template>
+<div>
+  <money-feed />
+  <br>
+  <div  id="display" >
+    <item-box v-for="item in this.$store.state.inventory" :key="item" :item="item" />
+  </div>
+</div>
 
 </template>
 

@@ -53,10 +53,13 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
-    INCREASE_FUNDS(state, money) {
-    },
+     INCREASE_FUNDS(state, money) {
+      state.funds += money
+      
+     },
     DECREASE_FUNDS(state, money) {
-    },
+      state.funds -= money
+     },
     DECREASE_INVENTORY(state, prodId) {
       state.inventory.forEach(
         (item) => {
